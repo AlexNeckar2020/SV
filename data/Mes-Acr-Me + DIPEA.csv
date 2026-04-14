@@ -1,0 +1,18 @@
+Name,Mes-Acr-Me + DIPEA
+
+Syringes,Volume (mL),concentration (mM)
+Pump1 (Solvent),20,0
+Pump2 (Catalyst),10,0.4
+Pump3 (Quencher),10,28.8
+
+Program,Remark:,solvent,catalyst,quencher
+step #,time (min),PUMP1 flow (mL/min),PUMP2 flow (mL/min),PUMP3 flow (mL/min),,catalyst conc (mM),quencher conc (mM),quencher/catalyst ratio
+1,0.50,2.00,0.00,0.00,,0.0000,0.000,
+2,0.70,2.00,0.50,0.00,,0.0800,0.000,0.0
+3,0.70,1.50,0.50,0.50,,0.0800,5.760,72.0
+4,0.70,1.00,0.50,1.00,,0.0800,11.520,144.0
+5,0.70,0.50,0.50,1.50,,0.0800,17.280,216.0
+6,0.70,0.00,0.50,2.00,,0.0800,23.040,288.0
+7,1.00,2.00,0.00,0.00,,0.0000,0.000,
+
+,Total V (mL):,6.50,1.75,3.50

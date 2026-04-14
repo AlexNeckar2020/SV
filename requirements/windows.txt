@@ -1,0 +1,3 @@
+-r common.txt
+# Windows-specific seabreeze (uses libusb backend)
+seabreeze[pyseabreeze]

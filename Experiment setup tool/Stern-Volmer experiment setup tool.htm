@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stern-Volmer experiment design tool</title>
+    <!-- Tailwind CSS CDN
+    <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- Local Tailwind CSS
+    <link href="./dist/output.css" rel="stylesheet" />  -->
+    <style>
+        /*! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com */
+
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb;
+        }
+
+        ::before,
+        ::after {
+            --tw-content: '';
+        }
+
+        html,
+        :host {
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            -moz-tab-size: 4;
+            -o-tab-size: 4;
+            tab-size: 4;
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            margin: 0;
+            line-height: inherit;
+        }
+
+        hr {
+            height: 0;
+            color: inherit;
+            border-top-width: 1px;
+        }
+
+        abbr:where([title]) {
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: inherit;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        b,
+        strong {
+            font-weight: bolder;
+        }
+
+        code,
+        kbd,
+        samp,
+        pre {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            font-size: 1em;
+        }
+
+        small {
+            font-size: 80%;
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+
+        sub {
+            bottom: -0.25em;
+        }
+
+        sup {
+            top: -0.5em;
+        }
+
+        table {
+            text-indent: 0;
+            border-color: inherit;
+            border-collapse: collapse;
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+            font-feature-settings: inherit;
+            font-variation-settings: inherit;
+            font-size: 100%;
+            font-weight: inherit;
+            line-height: inherit;
+            color: inherit;
+            margin: 0;
+            padding: 0;
+        }
+
+        button,
+        select {
+            text-transform: none;
+        }
+
+        button,
+        [type='button'],
+        [type='reset'],
+        [type='submit'] {
+            -webkit-appearance: button;
+            background-color: transparent;
+            background-image: none;
+        }
+
+        :-moz-focusring {
+            outline: auto;
+        }
+
+        :-moz-ui-invalid {
+            box-shadow: none;
+        }
+
+        progress {
+            vertical-align: baseline;
+        }
+
+        ::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+            height: auto;
+        }
+
+        [type='search'] {
+            -webkit-appearance: textfield;
+            outline-offset: -2px;
+        }
+
+        ::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit;
+        }
+
+        summary {
+            display: list-item;
+        }
+
+        blockquote,
+        dl,
+        dd,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        figure,
+        p,
+        pre {
+            margin: 0;
+        }
+
+        fieldset {
+            margin: 0;
+            padding: 0;
+        }
+
+        legend {
+            padding: 0;
+        }
+
+        ol,
+        ul,
+        menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        dialog {
+            padding: 0;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input::-moz-placeholder,
+        textarea::-moz-placeholder {
+            opacity: 1;
+            color: #9ca3af;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            opacity: 1;
+            color: #9ca3af;
+        }
+
+        button,
+        [role="button"] {
+            cursor: pointer;
+        }
+        button:disabled,
+        [role="button"]:disabled {
+            cursor: default;
+        }
+
+        img,
+        svg,
+        video,
+        canvas,
+        audio,
+        iframe,
+        embed,
+        object {
+            display: block;
+            vertical-align: middle;
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        [hidden] {
+            display: none;
+        }
+
+        *,
+        ::before,
+        ::after {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+        }
+
+        ::backdrop {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        @media (min-width: 640px) {
+            .container {
+            max-width: 640px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+            max-width: 768px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+            max-width: 1024px;
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .container {
+            max-width: 1280px;
+            }
+        }
+
+        @media (min-width: 1536px) {
+            .container {
+            max-width: 1536px;
+            }
+        }
+
+        h1 {
+            color: #ffdab9;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .col-span-1 {
+            grid-column: span 1 / span 1;
+        }
+
+        .col-span-4 {
+            grid-column: span 4 / span 4;
+        }
+
+        .mt-2 {
+            margin-top: 0.5rem;
+        }
+
+        .mt-4 {
+            margin-top: 1rem;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .table {
+            display: table;
+        }
+
+        .grid {
+            display: grid;
+        }
+
+        .contents {
+            display: contents;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .min-h-screen {
+            min-height: 100vh;
+        }
+
+        .w-full {
+            width: 100%;
+        }
+
+        .max-w-3xl {
+            max-width: 48rem;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .gap-4 {
+            gap: 1rem;
+        }
+
+        .gap-6 {
+            gap: 1.5rem;
+        }
+
+        .rounded-lg {
+            border-radius: 0.5rem;
+        }
+
+        .border {
+            border-width: 1px;
+        }
+
+        .border-t {
+            border-top-width: 1px;
+        }
+
+        .border-gray-500 {
+            --tw-border-opacity: 1;
+            border-color: rgb(107 114 128 / var(--tw-border-opacity));
+        }
+
+        .bg-\[\#1a1a1a\] {
+            --tw-bg-opacity: 1;
+            background-color: rgb(26 26 26 / var(--tw-bg-opacity));
+        }
+
+        .bg-\[\#2c2c2c\] {
+            --tw-bg-opacity: 1;
+            background-color: rgb(44 44 44 / var(--tw-bg-opacity));
+        }
+
+        .p-10 {
+            padding: 2.5rem;
+        }
+
+        .p-8 {
+            padding: 2rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-4xl {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        .text-\[\#ffdab9\] {
+            --tw-text-opacity: 1;
+            color: rgb(255 218 185 / var(--tw-text-opacity));
+        }
+
+        .outline {
+            outline-style: solid;
+        }
+
+        .transition {
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+
+        /* Custom styles for the dark theme */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a1a;
+            /* Very dark gray background */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            /* Align to top */
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            background-color: #2c2c2c;
+            /* Slightly lighter dark gray for container */
+            border-radius: 0.5rem;
+            box-shadow: -5px -5px 7px rgba(255, 40, 40, 0.9),
+                /* Red: top-left */
+                5px 5px 7px #30ff30;
+            /* Green: bottom-right */
+            padding: 2.5rem;
+            max-width: 1000px;
+            /* Slightly wider container */
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        h1 {
+            color: #ffdab9;
+            /* Peach color for heading */
+            font-weight: 700;
+            text-align: center;
+        }
+
+        /* --- Form Container Styling --- */
+        .form-container {
+            background-color: #3a3a3a;
+            width: 85%;
+            margin: 0 auto;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            min-height: 50px;
+        }
+
+        /* --- Table Container Styling for the 4th container --- */
+        .table-container {
+            background-color: #3a3a3a;
+            width: 85%;
+            margin: 0 auto;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            font-size: 0.75rem;
+            line-height: 1rem;
+            color: #fafad2;
+            overflow-x: auto;
+            /* Enable horizontal scrolling on small screens */
+            display: flex;
+            /* Make it a flex container */
+            flex-direction: column;
+            /* Stack children vertically */
+            gap: 1rem;
+        }
+
+        /* --- Table Grid Styling --- */
+        .table-grid {
+            grid-template-columns: 0.8fr 1.5fr repeat(3, 1fr) 0.5fr repeat(3, 1fr);
+            display: grid;
+            gap: 0.5rem;
+            text-align: center;
+            align-items: center;
+        }
+
+        .table-grid-header {
+            font-weight: 700;
+            padding: 0.25rem 0;
+            white-space: pre-wrap;
+            /* Allows text wrapping */
+        }
+
+        .table-grid-cell {
+            padding: 0.25rem 0;
+            white-space: nowrap;
+        }
+
+        .ok-value {
+            color: #d0ffd0;
+            /* Default "OK" color */
+        }
+
+        .error-value {
+            color: #ff4040;
+            /* Error color */
+        }
+
+        .total-row {
+            font-weight: 700;
+            margin-top: 1rem;
+        }
+
+        /* --- Input and Label Styling --- */
+        .input-label {
+            color: #fafad2;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        /* Custom labels and inputs for specific colors */
+        .pre-equilibration-label {
+            color: #a0ffff;
+            /* Reverted to average saturation cyan */
+        }
+
+        .rinsing-label {
+            color: #dfccfd;
+            /* Reverted to average saturation lilac */
+        }
+
+        /* New classes for the table cells */
+        .pre-equilibration-cell-color {
+            color: #a0ffff;
+        }
+
+        .rinsing-cell-color {
+            color: #dfccfd;
+        }
+
+        .text-input,
+        .number-input {
+            width: 100%;
+            background-color: #2c2c2c;
+            border: 1px solid #555;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+            color: #fafad2;
+            /* Explicitly set the text color for all inputs */
+        }
+
+        .number-input.invalid,
+        .number-input.invalid:focus {
+            border: 1px solid #ff4040;
+            /* Red border for invalid input, also on focus */
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), 0 0 5px #ff4040;
+            outline: none;
+            /* Removes default blue focus outline */
+        }
+
+        /* --- Grid Table Styling for second container --- */
+        .grid-table {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .grid-table .grid-cell {
+            padding: 0.5rem;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .grid-table .input-label {
+            text-align: left;
+        }
+
+        /* --- Aligned layout for third container's inputs --- */
+        /* This class aligns the inputs to the shortest label */
+        .aligned-inputs-grid {
+            display: grid;
+            grid-template-columns: minmax(min-content, 200px) 1fr;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .aligned-inputs-grid .input-label {
+            text-align: left;
+            white-space: nowrap;
+        }
+
+        /* Styles for the complex input groups (unaffected by this change) */
+        .multi-input-group {
+            display: grid;
+            grid-template-columns: auto 1fr auto 1fr;
+            gap: 0.5rem 1rem;
+            align-items: center;
+        }
+
+        .readonly-input {
+            background-color: #4c4c4c;
+            /* Slightly darker to indicate it's read-only */
+            color: #fafad2;
+            /* Ensure readability */
+        }
+
+        /* --- Button Styling --- */
+        .csv-button {
+            border-radius: 0.75rem;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            color: #1a1a1a;
+            position: relative;
+            overflow: hidden;
+            border: none;
+        }
+
+        .csv-button:not(:disabled) {
+            box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.2),
+                inset -2px -2px 5px rgba(0, 0, 0, 0.5),
+                5px 5px 10px rgba(0, 0, 0, 0.7),
+                -5px -5px 10px rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-open-csv:hover:not(:disabled) {
+            box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.2),
+                inset -2px -2px 5px rgba(0, 0, 0, 0.5),
+                5px 5px 10px rgba(0, 0, 0, 0.7),
+                -5px -5px 10px rgba(255, 255, 255, 0.1),
+                0 0 15px 5px #00ffff;
+        }
+
+        .btn-save-csv:hover:not(:disabled) {
+            box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.2),
+                inset -2px -2px 5px rgba(0, 0, 0, 0.5),
+                5px 5px 10px rgba(0, 0, 0, 0.7),
+                -5px -5px 10px rgba(255, 255, 255, 0.1),
+                0 0 15px 5px #afff00;
+        }
+
+        .btn-open-csv {
+            background: linear-gradient(to bottom right, #e0ffff, #0000ff);
+        }
+
+        .btn-open-csv:hover {
+            background: linear-gradient(to top left, #e0ffff, #0000ff);
+        }
+
+        .btn-save-csv {
+            background: linear-gradient(to bottom right, #ccffcc, #008000);
+        }
+
+        .btn-save-csv:hover {
+            background: linear-gradient(to top left, #ccffcc, #008000);
+        }
+
+        .csv-button:disabled {
+            background: linear-gradient(to bottom right, #444, #222);
+            /* Gray gradient */
+            color: #888;
+            cursor: not-allowed;
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .button-group {
+                flex-direction: row;
+                gap: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-[#1a1a1a] flex items-center justify-center min-h-screen p-8">
+
+    <div class="container bg-[#2c2c2c] rounded-lg p-10 max-w-3xl w-full flex flex-col gap-6">
+        <h1 class="text-4xl font-bold text-center text-[#ffdab9]">Stern-Volmer experiment setup</h1>
+
+        <!-- --- Form Inputs --- -->
+        <div class="flex flex-col gap-4 w-full items-center">
+            <div class="form-container">
+                <div class="input-group">
+                    <label for="experimentName" class="input-label">Experiment name</label>
+                    <input type="text" id="experimentName" value="Test1" class="text-input" oninput="updateTable()" />
+                </div>
+            </div>
+
+            <div class="form-container">
+                <div class="grid-table">
+                    <!-- First Line: Header labels -->
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"><label class="input-label">Syringe volume, mL</label></div>
+                    <div class="grid-cell"><label class="input-label">Concentration, mM</label></div>
+
+                    <!-- Second Line: Pump1 (Solvent) -->
+                    <div class="grid-cell input-label">Pump1 (Solvent)</div>
+                    <div class="grid-cell">
+                        <input type="number" id="pump1Volume" value="20" class="number-input" oninput="updateTable()" />
+                    </div>
+                    <div class="grid-cell"></div>
+
+                    <!-- Third Line: Pump2 (Catalyst) -->
+                    <div class="grid-cell input-label">Pump2 (Catalyst)</div>
+                    <div class="grid-cell">
+                        <input type="number" id="pump2Volume" value="10" class="number-input" oninput="updateTable()" />
+                    </div>
+                    <div class="grid-cell">
+                        <input type="number" id="pump2Concentration" value="0.25" class="number-input"
+                            oninput="updateTable()" />
+                    </div>
+
+                    <!-- Fourth Line: Pump3 (Quencher) -->
+                    <div class="grid-cell input-label">Pump3 (Quencher)</div>
+                    <div class="grid-cell">
+                        <input type="number" id="pump3Volume" value="10" class="number-input" oninput="updateTable()" />
+                    </div>
+                    <div class="grid-cell">
+                        <input type="number" id="pump3Concentration" value="1.0" class="number-input"
+                            oninput="updateTable()" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third container with new layout -->
+            <div class="form-container">
+                <!-- Pre-equilibration row -->
+                <div class="multi-input-group">
+                    <label for="preEquilibrationTime" class="input-label pre-equilibration-label">Pre-equilibration:
+                        time, min</label>
+                    <input type="number" id="preEquilibrationTime" value="0.5" class="number-input"
+                        oninput="updateTable()" />
+                    <label for="preEquilibrationFlowRate" class="input-label pre-equilibration-label">flow,
+                        mL/min</label>
+                    <input type="number" id="preEquilibrationFlowRate" value="2.5" class="number-input"
+                        oninput="updateTable()" />
+                </div>
+
+                <!-- Main aligned inputs group -->
+                <div class="flex flex-col gap-4 mt-4">
+                    <!-- Total Flow Rate -->
+                    <div class="aligned-inputs-grid">
+                        <label for="totalFlowRate" class="input-label">Total flow rate, mL/min</label>
+                        <input type="number" id="totalFlowRate" value="2.5" class="number-input"
+                            oninput="updateTable()" />
+                    </div>
+
+                    <!-- Step Duration -->
+                    <div class="aligned-inputs-grid">
+                        <label for="stepDuration" class="input-label">Step duration, min</label>
+                        <input type="number" id="stepDuration" value="0.5" class="number-input"
+                            oninput="updateTable()" />
+                    </div>
+
+                    <!-- Number of steps -->
+                    <div class="aligned-inputs-grid">
+                        <label for="numberOfSteps" class="input-label">Number of steps</label>
+                        <input type="number" id="numberOfSteps" value="5" class="number-input"
+                            oninput="updateTable()" />
+                    </div>
+                </div>
+
+                <!-- Rinsing row, now aligned with pre-equilibration -->
+                <div class="multi-input-group mt-4">
+                    <label for="rinsingTime" class="input-label rinsing-label">Rinsing: time, min</label>
+                    <input type="number" id="rinsingTime" value="1.0" class="number-input" oninput="updateTable()" />
+                    <label for="rinsingFlowRate" class="input-label rinsing-label">flow, mL/min</label>
+                    <input type="number" id="rinsingFlowRate" value="2.5" class="number-input"
+                        oninput="updateTable()" />
+                </div>
+
+                <!-- Read-only inputs -->
+                <div class="flex flex-col gap-4 mt-4">
+                    <!-- Final catalyst conc. (read-only) -->
+                    <div class="aligned-inputs-grid">
+                        <label for="finalCatalystConc" class="input-label">Final catalyst conc., mM</label>
+                        <input type="number" id="finalCatalystConc" value="0.00" class="number-input readonly-input"
+                            readonly />
+                    </div>
+
+                    <!-- Quencher conc. per step (read-only) -->
+                    <div class="aligned-inputs-grid">
+                        <label for="quencherConcPerStep" class="input-label">Quencher conc. per step, mM</label>
+                        <input type="number" id="quencherConcPerStep" value="0.00" class="number-input readonly-input"
+                            readonly />
+                    </div>
+                </div>
+            </div>
+
+            <!-- --- Fourth Container: Read-only tables --- -->
+            <div class="table-container">
+                <!-- First table header -->
+                <div class="table-grid table-grid-header">
+                    <div class="col-span-1">Program</div>
+                    <div class="col-span-1"></div>
+                    <div class="col-span-1">solvent</div>
+                    <div class="col-span-1">catalyst</div>
+                    <div class="col-span-1">quencher</div>
+                    <div class="col-span-4"></div>
+                </div>
+
+                <!-- Second table header and data rows, with line breaks for readability -->
+                <div class="table-grid table-grid-header border-t border-gray-500 mt-2">
+                    <div class="col-span-1">step #</div>
+                    <div class="col-span-1">duration<br>(min)</div>
+                    <div class="col-span-1">Pump1<br>flow<br>(mL/min)</div>
+                    <div class="col-span-1">Pump2<br>flow<br>(mL/min)</div>
+                    <div class="col-span-1">Pump3<br>flow<br>(mL/min)</div>
+                    <div class="col-span-1"></div>
+                    <div class="col-span-1">catalyst<br>conc.<br>(mM)</div>
+                    <div class="col-span-1">quencher<br>conc.<br>(mM)</div>
+                    <div class="col-span-1">quencher/<br>catalyst<br>ratio</div>
+                </div>
+
+                <!-- Table rows will be dynamically inserted here by JavaScript -->
+                <div id="steps-table-body"></div>
+
+                <!-- Final row with total volumes -->
+                <div class="table-grid table-grid-cell total-row">
+                    <div></div>
+                    <div>total volume<br>(mL)</div>
+                    <div class="ok-value" id="totalVolumePump1">0.00</div>
+                    <div class="ok-value" id="totalVolumePump2">0.00</div>
+                    <div class="ok-value" id="totalVolumePump3">0.00</div>
+                    <div class="col-span-1"></div>
+                    <div>total time</div>
+                    <div class="ok-value" id="totalTime">0.00</div>
+                </div>
+            </div>
+            <!-- --- End Fourth Container --- -->
+
+        </div>
+        <!-- --- End New Containers --- -->
+
+        <!-- Hidden file input for CSV upload -->
+        <input type="file" id="csvFileInput" accept=".csv" class="hidden" onchange="handleFileSelect(event)">
+
+        <div class="button-group">
+            <button class="csv-button btn-open-csv" onclick="openCsv()">Open .CSV</button>
+            <button id="saveCsvBtn" class="csv-button btn-save-csv" onclick="saveCsv()">Save .CSV</button>
+        </div>
+    </div>
+
+    <script>
+        // A helper function to check for NaNs and format the output value.
+        // Returns '?' if the value is NaN or null, otherwise returns the value formatted to two decimal places.
+        function formatOutputValue(value, decimals) {
+            return isNaN(value) ? '' : value.toFixed(decimals); // Format to two decimal places, NaN is reserved to make cells empty
+        }
+
+        // A helper function to check for syringe volume limits and apply the correct CSS class.
+        function checkVolumeAndFormat(elementId, value, limit) {
+            const element = document.getElementById(elementId);
+            element.innerText = formatOutputValue(value, 2);
+            const className = (limit !== undefined && value > limit) ? 'error-value' : 'ok-value';
+            element.className = className;
+        }
+
+        // A helper function to format fractional time (in minutes) into a string
+        function formatTime(totalMinutes) {
+
+            // Get the integer part for minutes
+            const minutes = Math.floor(totalMinutes);
+
+            // Get the fractional part for seconds and convert to a whole number
+            const seconds = Math.round((totalMinutes - minutes) * 60);
+
+            // Return a formatted string
+            if (minutes > 0 && seconds > 0) {
+                return `${minutes} min ${seconds} sec`;
+            } else if (minutes > 0) {
+                return `${minutes} min`;
+            } else if (seconds > 0) {
+                return `${seconds} sec`;
+            } else {
+                return "---"
+            }
+        }
+
+        // Helper function to validate all numeric inputs.
+        // Returns false if any input is invalid (NaN or negative).
+        function validateInputs() {
+            const maxSteps = 20; // max allowed number of steps
+            let isValid = true;
+            const numberInputs = document.querySelectorAll('.number-input');
+
+            numberInputs.forEach(input => {
+                // Skip validation for readonly inputs
+                if (input.readOnly) return;
+
+                const value = parseFloat(input.value);
+
+                // Adjust the max number of steps to a reasonable limit and make sure input is non-float
+                if (input.id === 'numberOfSteps')
+                    input.value = Math.min(Math.round(value), maxSteps);
+
+                if (isNaN(value) || value < 0) {
+                    input.classList.add('invalid');
+                    isValid = false;
+                } else {
+                    input.classList.remove('invalid');
+                }
+            });
+
+            return isValid;
+        }
+
+        // This function will be called whenever an input field is changed.
+        function updateTable() {
+            const saveCsvBtn = document.getElementById('saveCsvBtn');
+
+            // First, validate all inputs. If any are invalid, disable the save button and exit the function.
+            if (!validateInputs()) {
+                saveCsvBtn.disabled = true;
+                // Clear the table contents and reset totals when inputs are invalid
+                document.getElementById('steps-table-body').innerHTML = '';
+                document.getElementById('totalVolumePump1').innerText = '0.00';
+                document.getElementById('totalVolumePump2').innerText = '0.00';
+                document.getElementById('totalVolumePump3').innerText = '0.00';
+                document.getElementById('totalTime').innerText = '---'
+                return;
+            }
+
+            // If all inputs are valid, enable the save button
+            saveCsvBtn.disabled = false;
+
+
+            // --- Read all input values from the form ---
+            const experimentName = document.getElementById('experimentName').value;
+            const pump1Volume = parseFloat(document.getElementById('pump1Volume').value);
+            const pump2Volume = parseFloat(document.getElementById('pump2Volume').value);
+            const pump3Volume = parseFloat(document.getElementById('pump3Volume').value);
+            const pump2Concentration = parseFloat(document.getElementById('pump2Concentration').value);
+            const pump3Concentration = parseFloat(document.getElementById('pump3Concentration').value);
+
+            const totalFlowRate = parseFloat(document.getElementById('totalFlowRate').value);
+            const preEquilibrationTime = parseFloat(document.getElementById('preEquilibrationTime').value);
+            const preEquilibrationFlowRate = parseFloat(document.getElementById('preEquilibrationFlowRate').value);
+            const stepDuration = parseFloat(document.getElementById('stepDuration').value);
+            const numberOfSternVolmerSteps = parseInt(document.getElementById('numberOfSteps').value);
+            const totalNumberOfSteps = numberOfSternVolmerSteps + 2; // Adjust for pre-equilibration and rinsing steps
+            const rinsingTime = parseFloat(document.getElementById('rinsingTime').value);
+            const rinsingFlowRate = parseFloat(document.getElementById('rinsingFlowRate').value);
+
+            // --- Calculate and update the new read-only inputs ---
+            // Calculate the final catalyst concentration based on the number of steps and the initial concentration.
+            const finalCatalystConc = pump2Concentration / numberOfSternVolmerSteps;
+            // Calculate the increase in quencher concentration per step.
+            const quencherConcPerStep = numberOfSternVolmerSteps > 1 ? pump3Concentration / numberOfSternVolmerSteps : 0;
+
+            document.getElementById('finalCatalystConc').value = formatOutputValue(finalCatalystConc, 4);
+            document.getElementById('quencherConcPerStep').value = formatOutputValue(quencherConcPerStep, 3);
+
+            let totalVolumePump1 = 0;
+            let totalVolumePump2 = 0;
+            let totalVolumePump3 = 0;
+            let totalTime = 0;
+
+            // Get the container where the table rows will be added.
+            const stepsTableBody = document.getElementById('steps-table-body');
+
+            // Clear any existing rows to prepare for the new ones.
+            stepsTableBody.innerHTML = '';
+
+            // Loop through each step to create and append a new row.
+            for (let stepNumber = 0; stepNumber < totalNumberOfSteps; stepNumber++) {
+                const stepRow = document.createElement('div');
+                stepRow.className = 'table-grid table-grid-cell';
+
+                let duration, pump1Flow, pump2Flow, pump3Flow;
+                let catalystConc, quencherConc, quencherCatalystRatio;
+                let stepNumberClass = "ok-value";
+                let durationClass = "ok-value";
+                let pump1Class = "ok-value";
+                let pump2Class = "ok-value";
+                let pump3Class = "ok-value";
+                let catalystClass = "ok-value";
+                let quencherClass = "ok-value";
+                let quencherRatioClass = "ok-value";
+
+                // --- Logic for the Pre-equilibration Step (First Row) ---
+                if (stepNumber === 0) {
+                    duration = preEquilibrationTime;
+                    pump1Flow = preEquilibrationFlowRate; // Updated to use the new input
+                    pump2Flow = 0;
+                    pump3Flow = 0;
+                    catalystConc = 0;
+                    quencherConc = 0;
+                    quencherCatalystRatio = NaN;
+
+                    stepNumberClass = "pre-equilibration-cell-color";
+                    durationClass = "pre-equilibration-cell-color";
+                    pump1Class = "pre-equilibration-cell-color";
+                    pump2Class = "pre-equilibration-cell-color";
+                    pump3Class = "pre-equilibration-cell-color";
+                    catalystClass = "pre-equilibration-cell-color";
+                    quencherClass = "pre-equilibration-cell-color";
+                    quencherRatioClass = "pre-equilibration-cell-color";
+
+                }
+                // --- Logic for the Rinsing Step (Last Row) ---
+                else if (stepNumber === totalNumberOfSteps - 1) {
+                    duration = rinsingTime;
+                    pump1Flow = rinsingFlowRate; // Updated to use the new input
+                    pump2Flow = 0;
+                    pump3Flow = 0;
+                    catalystConc = 0;
+                    quencherConc = 0;
+                    quencherCatalystRatio = NaN;
+
+                    stepNumberClass = "rinsing-cell-color";
+                    durationClass = "rinsing-cell-color";
+                    pump1Class = "rinsing-cell-color";
+                    pump2Class = "rinsing-cell-color";
+                    pump3Class = "rinsing-cell-color";
+                    catalystClass = "rinsing-cell-color";
+                    quencherClass = "rinsing-cell-color";
+                    quencherRatioClass = "rinsing-cell-color";
+                }
+                // --- Logic for Intermediate Steps (Stern-Volmer Steps) ---
+                else {
+                    // These values are placeholders until you provide the formulas.
+                    duration = stepDuration;
+                    pump2Flow = totalFlowRate / numberOfSternVolmerSteps; // catalyst
+                    pump3Flow = (stepNumber - 1) * totalFlowRate / numberOfSternVolmerSteps; // quencher
+                    pump1Flow = Math.max(0, totalFlowRate - pump2Flow - pump3Flow); // solvent, ensure non-negative
+
+                    catalystConc = pump2Concentration * (pump2Flow / totalFlowRate);
+                    quencherConc = pump3Concentration * (pump3Flow / totalFlowRate);
+                    quencherCatalystRatio = quencherConc / catalystConc;
+                }
+
+                // Accumulate total volumes and time
+                totalVolumePump1 += pump1Flow * duration;
+                totalVolumePump2 += pump2Flow * duration;
+                totalVolumePump3 += pump3Flow * duration;
+                totalTime += duration
+
+                // Append the new row with the calculated and placeholder values.
+                stepRow.innerHTML = `
+                    <div class="${stepNumberClass}">${stepNumber + 1}</div>
+                    <div class="${durationClass}">${formatOutputValue(duration, 2)}</div>
+                    <div class="${pump1Class}">${formatOutputValue(pump1Flow, 2)}</div>
+                    <div class="${pump2Class}">${formatOutputValue(pump2Flow, 2)}</div>
+                    <div class="${pump3Class}">${formatOutputValue(pump3Flow, 2)}</div>
+                    <div></div>
+                    <div class="${catalystClass}">${formatOutputValue(catalystConc, 4)}</div>
+                    <div class="${quencherClass}">${formatOutputValue(quencherConc, 3)}</div>
+                    <div class="${quencherRatioClass}">${formatOutputValue(quencherCatalystRatio, 1)}</div>
+                `;
+                stepsTableBody.appendChild(stepRow);
+            }
+
+            // Update the total volume row and apply conditional class
+            checkVolumeAndFormat('totalVolumePump1', totalVolumePump1, pump1Volume);
+            checkVolumeAndFormat('totalVolumePump2', totalVolumePump2, pump2Volume);
+            checkVolumeAndFormat('totalVolumePump3', totalVolumePump3, pump3Volume);
+            document.getElementById('totalTime').innerText = formatTime(totalTime);
+        }
+
+        // --- CSV Export/Import Functions ---
+
+        // Function to save the current data to a CSV file.
+        function saveCsv() {
+            // Get all input values and table data
+            const experimentName = document.getElementById('experimentName').value;
+            const pump1Volume = document.getElementById('pump1Volume').value;
+            const pump2Volume = document.getElementById('pump2Volume').value;
+            const pump3Volume = document.getElementById('pump3Volume').value;
+            const pump2Concentration = document.getElementById('pump2Concentration').value;
+            const pump3Concentration = document.getElementById('pump3Concentration').value;
+            const totalVolumePump1 = document.getElementById('totalVolumePump1').innerText;
+            const totalVolumePump2 = document.getElementById('totalVolumePump2').innerText;
+            const totalVolumePump3 = document.getElementById('totalVolumePump3').innerText;
+
+            const totalFlowRate = document.getElementById('totalFlowRate').value;
+            const preEquilibrationTime = document.getElementById('preEquilibrationTime').value;
+            const preEquilibrationFlowRate = document.getElementById('preEquilibrationFlowRate').value;
+            const stepDuration = document.getElementById('stepDuration').value;
+            const numberOfSteps = document.getElementById('numberOfSteps').value;
+            const rinsingTime = document.getElementById('rinsingTime').value;
+            const rinsingFlowRate = document.getElementById('rinsingFlowRate').value;
+
+            // CSV file contents: experiment name
+            let csvContent = `Name,${experimentName}\n`;
+            csvContent += `\n`; // Add a blank line
+
+            // CSV file contents: syringe parameters
+            csvContent += `Syringes,Volume (mL),concentration (mM)\n`
+            csvContent += `Pump1 (Solvent),${pump1Volume},0\n`;
+            csvContent += `Pump2 (Catalyst),${pump2Volume},${pump2Concentration}\n`;
+            csvContent += `Pump3 (Quencher),${pump3Volume},${pump3Concentration}\n`;
+            csvContent += `\n`; // Add a blank line
+
+            // CSV file contents: experiment parameters
+            // csvContent += `Parameters,Value\n`;
+            // csvContent += `Total Flow Rate (mL/min),${totalFlowRate}\n`;
+            // csvContent += `Pre-equilibration Time (min),${preEquilibrationTime}\n`;
+            // csvContent += `Pre-equilibration Flow Rate (mL/min),${preEquilibrationFlowRate}\n`;
+            // csvContent += `Step Duration (min),${stepDuration}\n`;
+            // csvContent += `Number of Steps,${numberOfSteps}\n`;
+            // csvContent += `Rinsing Time (min),${rinsingTime}\n`;
+            // csvContent += `Rinsing Flow Rate (mL/min),${rinsingFlowRate}\n`;
+            // csvContent += `\n`; // Add a blank line
+
+            // CSV file contents: experiment table
+            // Header for the experiment table
+            csvContent += `Program,Remark:,solvent,catalyst,quencher\n`;
+            csvContent += `step #,time (min),PUMP1 flow (mL/min),PUMP2 flow (mL/min),PUMP3 flow (mL/min),,catalyst conc (mM),quencher conc (mM),quencher/catalyst ratio\n`;
+
+            // All data rows from the dynamically generated table
+            const tableRows = document.getElementById('steps-table-body').children;
+            for (const row of tableRows) {
+                const rowData = [];
+                for (const cell of row.children) {
+                    rowData.push(cell.innerText);
+                }
+                csvContent += rowData.join(',') + '\n';
+            }
+            csvContent += `\n`; // Add a blank line
+
+            // Total volumes data
+            csvContent += `,Total V (mL):,${totalVolumePump1},${totalVolumePump2},${totalVolumePump3}\n`;
+
+            // Create a blob and a download link
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            const url = URL.createObjectURL(blob);
+            link.setAttribute('href', url);
+            link.setAttribute('download', `${experimentName}.csv`);
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // Function to trigger the file input dialog
+        function openCsv() {
+            document.getElementById('csvFileInput').click();
+        }
+
+        // Function to handle the file selection and parse the CSV
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (!file) {
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                const content = e.target.result;
+                parseCsv(content);
+            };
+            reader.readAsText(file);
+        }
+
+        // Function to parse the CSV content and update the form
+        // This function has been rewritten to match the new CSV format generated by saveCsv().
+        function parseCsv(csvText) {
+            const lines = csvText.trim().split('\n');
+            const params = {};
+
+            // Helper function to safely get a value from a line
+            const getValue = (line, index) => {
+                const value = line[index] ? line[index].trim() : '';
+                return value !== '' ? value : NaN;
+            };
+
+            // Set the experiment name
+            const experimentNameLine = lines.find(line => line.startsWith('Name,'));
+            if (experimentNameLine) {
+                const name = experimentNameLine.split(',')[1];
+                document.getElementById('experimentName').value = name ? name.trim() : '';
+            }
+
+            // Set the pump volumes and concentrations
+            const pump1Line = lines.find(line => line.startsWith('Pump1 (Solvent),'));
+            if (pump1Line) {
+                const parts = pump1Line.split(',');
+                document.getElementById('pump1Volume').value = parts[1] ? parts[1].trim() : '';
+            }
+
+            const pump2Line = lines.find(line => line.startsWith('Pump2 (Catalyst),'));
+            if (pump2Line) {
+                const parts = pump2Line.split(',');
+                document.getElementById('pump2Volume').value = parts[1] ? parts[1].trim() : '';
+                document.getElementById('pump2Concentration').value = parts[2] ? parts[2].trim() : '';
+            }
+
+            const pump3Line = lines.find(line => line.startsWith('Pump3 (Quencher),'));
+            if (pump3Line) {
+                const parts = pump3Line.split(',');
+                document.getElementById('pump3Volume').value = parts[1] ? parts[1].trim() : '';
+                document.getElementById('pump3Concentration').value = parts[2] ? parts[2].trim() : '';
+            }
+
+            // Find the start and end of the program table
+            const programHeaderIndex = lines.findIndex(line => line.startsWith('Program,'));
+            if (programHeaderIndex === -1) {
+                console.error("Program table not found in CSV.");
+                updateTable();
+                return;
+            }
+            const tableStartIndex = programHeaderIndex + 2; // Skip the "Program" and "step #" header lines
+
+            let tableRows = [];
+            for (let i = tableStartIndex; i < lines.length; i++) {
+                // Stop when a blank line or the "Total V" line is found
+                if (lines[i].trim() === '' || lines[i].startsWith(',')) {
+                    break;
+                }
+                tableRows.push(lines[i].split(','));
+            }
+
+            if (tableRows.length > 0) {
+                // Get values for Pre-equilibration (Step 1)
+                const preEquilibrationRow = tableRows[0];
+                const preEquilibrationTime = parseFloat(getValue(preEquilibrationRow, 1));
+                const preEquilibrationFlowRate = parseFloat(getValue(preEquilibrationRow, 2));
+
+                // Get values for the first Stern-Volmer step (Step 2)
+                const step2Row = tableRows[1];
+                const stepDuration = parseFloat(getValue(step2Row, 1));
+                const pump1FlowStep2 = parseFloat(getValue(step2Row, 2));
+                const pump2FlowStep2 = parseFloat(getValue(step2Row, 3));
+                const pump3FlowStep2 = parseFloat(getValue(step2Row, 4));
+                const totalFlowRate = pump1FlowStep2 + pump2FlowStep2 + pump3FlowStep2;
+
+                // Get values for the last step (Rinsing)
+                const lastRow = tableRows[tableRows.length - 1];
+                const rinsingTime = parseFloat(getValue(lastRow, 1));
+                const rinsingFlowRate = parseFloat(getValue(lastRow, 2));
+
+                // Get the number of steps
+                const numberOfSteps = tableRows.length - 2;
+
+                // Set the input values
+                document.getElementById('totalFlowRate').value = isNaN(totalFlowRate) ? '' : totalFlowRate;
+                document.getElementById('preEquilibrationTime').value = isNaN(preEquilibrationTime) ? '' : preEquilibrationTime;
+                document.getElementById('preEquilibrationFlowRate').value = isNaN(preEquilibrationFlowRate) ? '' : preEquilibrationFlowRate;
+                document.getElementById('stepDuration').value = isNaN(stepDuration) ? '' : stepDuration;
+                document.getElementById('numberOfSteps').value = isNaN(numberOfSteps) ? '' : numberOfSteps;
+                document.getElementById('rinsingTime').value = isNaN(rinsingTime) ? '' : rinsingTime;
+                document.getElementById('rinsingFlowRate').value = isNaN(rinsingFlowRate) ? '' : rinsingFlowRate;
+            }
+
+            // Trigger update to re-render the table and validate inputs
+            updateTable();
+        }
+
+        // Call the function on page load to initially populate the table.
+        window.onload = updateTable;
+    </script>
+</body>
+
+</html>

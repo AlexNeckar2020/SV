@@ -1,0 +1,5 @@
+-r common.txt
+# Raspberry Pi specific hardware control
+RPi.GPIO==0.7.1
+# Linux-specific seabreeze (uses libusb backend)
+seabreeze==2.10.1

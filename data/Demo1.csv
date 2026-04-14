@@ -1,0 +1,18 @@
+Name,Demo1
+
+Syringes,Volume (mL),concentration (mM)
+Pump1 (Solvent),10,0
+Pump2 (Catalyst),5,0.2
+Pump3 (Quencher),5,5.0
+
+Program,Remark:,solvent,catalyst,quencher
+step #,time (min),PUMP1 flow (mL/min),PUMP2 flow (mL/min),PUMP3 flow (mL/min),,catalyst conc (mM),quencher conc (mM),quencher/catalyst ratio
+1,0.50,2.00,0.00,0.00,,0.0000,0.000,
+2,0.50,1.60,0.40,0.00,,0.0400,0.000,0.0
+3,0.50,1.20,0.40,0.40,,0.0400,1.000,25.0
+4,0.50,0.80,0.40,0.80,,0.0400,2.000,50.0
+5,0.50,0.40,0.40,1.20,,0.0400,3.000,75.0
+6,0.50,0.00,0.40,1.60,,0.0400,4.000,100.0
+7,0.50,2.00,0.00,0.00,,0.0000,0.000,
+
+,Total V (mL):,4.00,1.00,2.00
