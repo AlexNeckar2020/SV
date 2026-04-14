@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+            <html>
+            <head>
+              <meta charset="UTF-8">
+              <title>Log File</title>
+              <style>
+                body {
+                  background-color: black;
+                  color: white;
+                  font-family: Courier, monospace;
+                }
+                .log-container {
+                  height: 98vh;
+                  overflow-y: auto;
+                  border: 1px solid #444;
+                }
+                table {
+                  width: 100%;
+                  border-collapse: collapse;
+                  table-layout: auto;
+                }
+                th, td {
+                  padding: 4px;
+                  border: 1px solid #555;
+                  text-align: left;
+                }
+                td:nth-child(3) {
+                  word-break: break-word;
+                }
+                thead th {
+                  position: sticky;
+                  top: 0;
+                  background-color: #222;
+                  z-index: 1;
+                }
+              </style>
+            </head>
+            <body>
+              <div class="log-container">
+                <table>
+                  <thead>
+                    <tr><th>Timestamp</th><th>Agent</th><th>Message</th></tr>
+                  </thead>
+                  <tbody>
+            <tr><td>2026-02-09 12:01:20</td><td style='color: #cccccc'>uart</td><td style='color: #cccccc'>COM7 initialized at 19200 baud</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent), initialized at 19200 baud</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): Pump thread started</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #cccccc'>uart</td><td style='color: #cccccc'>COM9 initialized at 19200 baud</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst), initialized at 19200 baud</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): Pump thread started</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #cccccc'>uart</td><td style='color: #cccccc'>COM10 initialized at 19200 baud</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher), initialized at 19200 baud</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): Pump thread started</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #cccccc'>uart</td><td style='color: #cccccc'>COM8 initialized at 9600 baud</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: white'>UART6</td><td style='color: white'>LED serial controller initialized at 9600 baud</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Pump scheduler starting 'Initializing pumps' sequence</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 0.00 s (scheduled at 0.00 s): Reset Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: white'>SV</td><td style='color: white'>|-> Starting the main application...</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< * RESET (reset)</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Data reader thread started</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Sample spectrum file loaded from C:\Users\abutkev\PycharmProjects\SV\Rsc\4CzIPN-EtOH.csv</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Spectrometer output will be simulated</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Found model: USB4000, serial number: Emulator</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Integration time device limits = [10 us ... 65535000 us]</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Emission intensity limit = 65535.0 a.u.</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Integration time = 100000 us</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Detection limits (device): [410.0 nm ... 900.0 nm]</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Detection limits cropped to: [410.0 nm ... 900.0 nm]</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> reset took 241.93 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:01:20</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): reset to address 00, pump stopped</td></tr>
+<tr><td>2026-02-09 12:01:21</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 0.50 s (scheduled at 0.50 s): Get version Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:01:21</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< VER (get_version)</td></tr>
+<tr><td>2026-02-09 12:01:21</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> get_version took 21.52 ms, response: 00SNE1000V3.923</td></tr>
+<tr><td>2026-02-09 12:01:21</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): model NE1000, firmware version 3.923</td></tr>
+<tr><td>2026-02-09 12:01:21</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 1.00 s (scheduled at 1.00 s): Set units Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:01:21</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< VOL ML (set_volume_units)</td></tr>
+<tr><td>2026-02-09 12:01:21</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_volume_units took 10.55 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:01:21</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< VOL (set_volume_units)</td></tr>
+<tr><td>2026-02-09 12:01:21</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_volume_units took 10.26 ms, response: 00S00.00ML</td></tr>
+<tr><td>2026-02-09 12:01:21</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): volume units set to ML</td></tr>
+<tr><td>2026-02-09 12:01:22</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 56662.7 a.u. at Lmax 540.0 nm</td></tr>
+<tr><td>2026-02-09 12:01:22</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 57790.2 a.u. at 0.0 s</td></tr>
+<tr><td>2026-02-09 12:01:22</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 0 s - OVERFLOW!</td></tr>
+<tr><td>2026-02-09 12:01:22</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 1.50 s (scheduled at 1.50 s): Reset Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:01:22</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< * RESET (reset)</td></tr>
+<tr><td>2026-02-09 12:01:22</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> reset took 239.69 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:01:22</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): reset to address 00, pump stopped</td></tr>
+<tr><td>2026-02-09 12:01:22</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 2.00 s (scheduled at 2.00 s): Get version Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:01:22</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< VER (get_version)</td></tr>
+<tr><td>2026-02-09 12:01:22</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> get_version took 21.62 ms, response: 00SNE1000V3.923</td></tr>
+<tr><td>2026-02-09 12:01:22</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): model NE1000, firmware version 3.923</td></tr>
+<tr><td>2026-02-09 12:01:23</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 2.50 s (scheduled at 2.50 s): Set units Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:01:23</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< VOL ML (set_volume_units)</td></tr>
+<tr><td>2026-02-09 12:01:23</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_volume_units took 10.85 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:01:23</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< VOL (set_volume_units)</td></tr>
+<tr><td>2026-02-09 12:01:23</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_volume_units took 11.04 ms, response: 00S00.00ML</td></tr>
+<tr><td>2026-02-09 12:01:23</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): volume units set to ML</td></tr>
+<tr><td>2026-02-09 12:01:23</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 3.00 s (scheduled at 3.00 s): Reset Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:01:23</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< * RESET (reset)</td></tr>
+<tr><td>2026-02-09 12:01:24</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> reset took 239.9 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:01:24</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): reset to address 00, pump stopped</td></tr>
+<tr><td>2026-02-09 12:01:24</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 3.50 s (scheduled at 3.50 s): Get version Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:01:24</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< VER (get_version)</td></tr>
+<tr><td>2026-02-09 12:01:24</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> get_version took 21.15 ms, response: 00SNE1000V3.923</td></tr>
+<tr><td>2026-02-09 12:01:24</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): model NE1000, firmware version 3.923</td></tr>
+<tr><td>2026-02-09 12:01:24</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 4.00 s (scheduled at 4.00 s): Set units Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:01:24</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< VOL ML (set_volume_units)</td></tr>
+<tr><td>2026-02-09 12:01:24</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Pump scheduler finished all actions of 'Initializing pumps' sequence</td></tr>
+<tr><td>2026-02-09 12:01:24</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_volume_units took 21.31 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:01:24</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< VOL (set_volume_units)</td></tr>
+<tr><td>2026-02-09 12:01:24</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_volume_units took 10.44 ms, response: 00S00.00ML</td></tr>
+<tr><td>2026-02-09 12:01:24</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): volume units set to ML</td></tr>
+<tr><td>2026-02-09 12:01:25</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 59507.5 a.u. at Lmax 547.0 nm</td></tr>
+<tr><td>2026-02-09 12:01:25</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 61602.5 a.u. at 3.1 s</td></tr>
+<tr><td>2026-02-09 12:01:25</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 3.1 s (+3.1 s) - OVERFLOW!</td></tr>
+<tr><td>2026-02-09 12:01:28</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 58312.0 a.u. at Lmax 554.0 nm</td></tr>
+<tr><td>2026-02-09 12:01:28</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 59112.6 a.u. at 6.2 s</td></tr>
+<tr><td>2026-02-09 12:01:28</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 6.2 s (+3.1 s) - OVERFLOW!</td></tr>
+<tr><td>2026-02-09 12:01:29</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Spectrometer data reading restarted, previous emission data erased</td></tr>
+<tr><td>2026-02-09 12:01:31</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 57827.9 a.u. at Lmax 541.0 nm</td></tr>
+<tr><td>2026-02-09 12:01:31</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 58222.2 a.u. at 0.0 s</td></tr>
+<tr><td>2026-02-09 12:01:31</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 0 s - OVERFLOW!</td></tr>
+<tr><td>2026-02-09 12:01:31</td><td style='color: #1e90ff'>LED</td><td style='color: #1e90ff'>LED manually switched OFF</td></tr>
+<tr><td>2026-02-09 12:01:31</td><td style='color: #1e90ff'>LED</td><td style='color: #1e90ff'>LED brightness manually adjusted to 0%</td></tr>
+<tr><td>2026-02-09 12:01:32</td><td style='color: #1e90ff'>LED</td><td style='color: #1e90ff'>LED manually switched ON</td></tr>
+<tr><td>2026-02-09 12:01:32</td><td style='color: #1e90ff'>LED</td><td style='color: #1e90ff'>LED brightness manually adjusted to 40%</td></tr>
+<tr><td>2026-02-09 12:01:34</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 55781.5 a.u. at Lmax 562.0 nm</td></tr>
+<tr><td>2026-02-09 12:01:34</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 57294.3 a.u. at 3.1 s</td></tr>
+<tr><td>2026-02-09 12:01:34</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 3.1 s (+3.1 s) - OVERFLOW!</td></tr>
+<tr><td>2026-02-09 12:01:37</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 58335.9 a.u. at Lmax 544.0 nm</td></tr>
+<tr><td>2026-02-09 12:01:37</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 59090.2 a.u. at 6.2 s</td></tr>
+<tr><td>2026-02-09 12:01:37</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 6.2 s (+3.1 s) - OVERFLOW!</td></tr>
+<tr><td>2026-02-09 12:01:37</td><td style='color: #1e90ff'>LED</td><td style='color: #ff0000'><strong>ERROR:</strong> Command rejected by LED controller: 'LED 15'</td></tr>
+<tr><td>2026-02-09 12:01:40</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 8494.9 a.u. at Lmax 567.0 nm</td></tr>
+<tr><td>2026-02-09 12:01:40</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 8646.5 a.u. at 9.3 s</td></tr>
+<tr><td>2026-02-09 12:01:40</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 9.3 s (+3.1 s)</td></tr>
+<tr><td>2026-02-09 12:01:40</td><td style='color: #1e90ff'>LED</td><td style='color: #1e90ff'>LED brightness adjusted to 15%</td></tr>
+<tr><td>2026-02-09 12:01:43</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 8308.2 a.u. at Lmax 552.0 nm</td></tr>
+<tr><td>2026-02-09 12:01:43</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 8423.2 a.u. at 12.6 s</td></tr>
+<tr><td>2026-02-09 12:01:43</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 12.6 s (+3.3 s)</td></tr>
+<tr><td>2026-02-09 12:01:47</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 8401.6 a.u. at Lmax 542.0 nm</td></tr>
+<tr><td>2026-02-09 12:01:47</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 8557.2 a.u. at 15.7 s</td></tr>
+<tr><td>2026-02-09 12:01:47</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 15.7 s (+3.1 s)</td></tr>
+<tr><td>2026-02-09 12:01:50</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 8960.0 a.u. at Lmax 551.0 nm</td></tr>
+<tr><td>2026-02-09 12:01:50</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 9086.5 a.u. at 18.8 s</td></tr>
+<tr><td>2026-02-09 12:01:50</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 18.8 s (+3.1 s)</td></tr>
+<tr><td>2026-02-09 12:01:50</td><td style='color: #1e90ff'>LED</td><td style='color: #1e90ff'>LED brightness adjusted to 15%</td></tr>
+<tr><td>2026-02-09 12:01:53</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 8408.6 a.u. at Lmax 550.0 nm</td></tr>
+<tr><td>2026-02-09 12:01:53</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 8571.1 a.u. at 21.9 s</td></tr>
+<tr><td>2026-02-09 12:01:53</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 21.9 s (+3.1 s)</td></tr>
+<tr><td>2026-02-09 12:01:56</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 8560.5 a.u. at Lmax 559.0 nm</td></tr>
+<tr><td>2026-02-09 12:01:56</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 8730.8 a.u. at 25.0 s</td></tr>
+<tr><td>2026-02-09 12:01:56</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 25.0 s (+3.1 s)</td></tr>
+<tr><td>2026-02-09 12:01:58</td><td style='color: #1e90ff'>LED</td><td style='color: #1e90ff'>LED brightness adjusted to 10%</td></tr>
+<tr><td>2026-02-09 12:01:59</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 5812.4 a.u. at Lmax 542.0 nm</td></tr>
+<tr><td>2026-02-09 12:01:59</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 5816.4 a.u. at 28.2 s</td></tr>
+<tr><td>2026-02-09 12:01:59</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 28.2 s (+3.2 s)</td></tr>
+<tr><td>2026-02-09 12:02:02</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 5575.4 a.u. at Lmax 539.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:02</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 5796.8 a.u. at 31.2 s</td></tr>
+<tr><td>2026-02-09 12:02:02</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 31.2 s (+3.0 s)</td></tr>
+<tr><td>2026-02-09 12:02:03</td><td style='color: #1e90ff'>LED</td><td style='color: #1e90ff'>LED brightness manually adjusted to 15%</td></tr>
+<tr><td>2026-02-09 12:02:05</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 5691.5 a.u. at Lmax 546.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:05</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 5761.8 a.u. at 34.4 s</td></tr>
+<tr><td>2026-02-09 12:02:05</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 34.4 s (+3.2 s)</td></tr>
+<tr><td>2026-02-09 12:02:08</td><td style='color: #1e90ff'>LED</td><td style='color: #1e90ff'>LED brightness manually adjusted to 20%</td></tr>
+<tr><td>2026-02-09 12:02:08</td><td style='color: #1e90ff'>LED</td><td style='color: #1e90ff'>LED brightness manually adjusted to 25%</td></tr>
+<tr><td>2026-02-09 12:02:08</td><td style='color: #1e90ff'>LED</td><td style='color: #1e90ff'>LED brightness manually adjusted to 30%</td></tr>
+<tr><td>2026-02-09 12:02:08</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 5407.2 a.u. at Lmax 545.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:08</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 5627.5 a.u. at 37.4 s</td></tr>
+<tr><td>2026-02-09 12:02:08</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 37.4 s (+3.0 s)</td></tr>
+<tr><td>2026-02-09 12:02:11</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 5537.9 a.u. at Lmax 546.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:11</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 5674.3 a.u. at 40.6 s</td></tr>
+<tr><td>2026-02-09 12:02:11</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 40.6 s (+3.2 s)</td></tr>
+<tr><td>2026-02-09 12:02:14</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 5610.0 a.u. at Lmax 540.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:14</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 5774.4 a.u. at 43.6 s</td></tr>
+<tr><td>2026-02-09 12:02:14</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 43.6 s (+3.0 s)</td></tr>
+<tr><td>2026-02-09 12:02:16</td><td style='color: #1e90ff'>LED</td><td style='color: #1e90ff'>LED brightness adjusted to 30%</td></tr>
+<tr><td>2026-02-09 12:02:18</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 17267.2 a.u. at Lmax 550.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:18</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 17597.0 a.u. at 46.8 s</td></tr>
+<tr><td>2026-02-09 12:02:18</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 46.8 s (+3.2 s)</td></tr>
+<tr><td>2026-02-09 12:02:21</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 17374.9 a.u. at Lmax 557.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:21</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 17667.6 a.u. at 49.9 s</td></tr>
+<tr><td>2026-02-09 12:02:21</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 49.9 s (+3.1 s)</td></tr>
+<tr><td>2026-02-09 12:02:24</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 17734.7 a.u. at Lmax 551.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:24</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 17956.3 a.u. at 53.0 s</td></tr>
+<tr><td>2026-02-09 12:02:24</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 53.0 s (+3.1 s)</td></tr>
+<tr><td>2026-02-09 12:02:27</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 17513.2 a.u. at Lmax 547.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:27</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 17721.0 a.u. at 56.1 s</td></tr>
+<tr><td>2026-02-09 12:02:27</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 56.1 s (+3.1 s)</td></tr>
+<tr><td>2026-02-09 12:02:30</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 15938.7 a.u. at Lmax 542.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:30</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 16461.3 a.u. at 59.2 s</td></tr>
+<tr><td>2026-02-09 12:02:30</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 59.2 s (+3.1 s)</td></tr>
+<tr><td>2026-02-09 12:02:33</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 16874.7 a.u. at Lmax 542.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:33</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 17376.1 a.u. at 62.3 s</td></tr>
+<tr><td>2026-02-09 12:02:33</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 62.3 s (+3.1 s)</td></tr>
+<tr><td>2026-02-09 12:02:34</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Set NumOfSpectraPerDatapoint = 5</td></tr>
+<tr><td>2026-02-09 12:02:34</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Set integration_time = 100000</td></tr>
+<tr><td>2026-02-09 12:02:34</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Integration time = 100000 us</td></tr>
+<tr><td>2026-02-09 12:02:34</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Set boxcarSMA = 10</td></tr>
+<tr><td>2026-02-09 12:02:34</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Set acquisition_delay = 1000</td></tr>
+<tr><td>2026-02-09 12:02:34</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Set detection_Lmin = 470</td></tr>
+<tr><td>2026-02-09 12:02:34</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Set detection_Lmax = 700</td></tr>
+<tr><td>2026-02-09 12:02:37</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 16643.6 a.u. at Lmax 555.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:37</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 7753.9 a.u. at 65.8 s</td></tr>
+<tr><td>2026-02-09 12:02:37</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 65.8 s (+3.5 s)</td></tr>
+<tr><td>2026-02-09 12:02:38</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 16992.7 a.u. at Lmax 548.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:38</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 7825.0 a.u. at 67.3 s</td></tr>
+<tr><td>2026-02-09 12:02:38</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 67.3 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:02:40</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 16879.4 a.u. at Lmax 546.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:40</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 7818.6 a.u. at 68.8 s</td></tr>
+<tr><td>2026-02-09 12:02:40</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 68.8 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:02:41</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 16908.2 a.u. at Lmax 550.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:41</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 7744.3 a.u. at 70.3 s</td></tr>
+<tr><td>2026-02-09 12:02:41</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 70.3 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:02:43</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 16969.6 a.u. at Lmax 550.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:43</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 7757.9 a.u. at 71.8 s</td></tr>
+<tr><td>2026-02-09 12:02:43</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 71.8 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:02:44</td><td style='color: #1e90ff'>LED</td><td style='color: #1e90ff'>LED brightness adjusted to 45%</td></tr>
+<tr><td>2026-02-09 12:02:44</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 24998.7 a.u. at Lmax 551.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:44</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 11563.8 a.u. at 73.3 s</td></tr>
+<tr><td>2026-02-09 12:02:44</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 73.3 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:02:46</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 25510.1 a.u. at Lmax 553.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:46</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 11760.7 a.u. at 74.8 s</td></tr>
+<tr><td>2026-02-09 12:02:46</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 74.8 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:02:47</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 25193.9 a.u. at Lmax 547.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:47</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 11856.9 a.u. at 76.3 s</td></tr>
+<tr><td>2026-02-09 12:02:47</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 76.3 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:02:49</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 24807.5 a.u. at Lmax 546.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:49</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 11699.8 a.u. at 77.8 s</td></tr>
+<tr><td>2026-02-09 12:02:49</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 77.8 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:02:50</td><td style='color: #1e90ff'>LED</td><td style='color: #1e90ff'>LED brightness adjusted to 60%</td></tr>
+<tr><td>2026-02-09 12:02:50</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 32858.7 a.u. at Lmax 549.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:50</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 15495.2 a.u. at 79.3 s</td></tr>
+<tr><td>2026-02-09 12:02:50</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 79.3 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:02:52</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 32970.9 a.u. at Lmax 542.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:52</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 15481.5 a.u. at 80.8 s</td></tr>
+<tr><td>2026-02-09 12:02:52</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 80.8 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:02:53</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 33882.7 a.u. at Lmax 543.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:53</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 15647.6 a.u. at 82.3 s</td></tr>
+<tr><td>2026-02-09 12:02:53</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 82.3 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:02:55</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44020.2 a.u. at Lmax 550.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:55</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20795.1 a.u. at 83.8 s</td></tr>
+<tr><td>2026-02-09 12:02:55</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 83.8 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:02:55</td><td style='color: #1e90ff'>LED</td><td style='color: #1e90ff'>LED brightness adjusted to 80%</td></tr>
+<tr><td>2026-02-09 12:02:56</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44243.0 a.u. at Lmax 544.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:56</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20432.6 a.u. at 85.4 s</td></tr>
+<tr><td>2026-02-09 12:02:56</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 85.4 s (+1.6 s)</td></tr>
+<tr><td>2026-02-09 12:02:58</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44373.6 a.u. at Lmax 548.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:58</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20575.4 a.u. at 86.9 s</td></tr>
+<tr><td>2026-02-09 12:02:58</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 86.9 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:02:59</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 45298.9 a.u. at Lmax 550.0 nm</td></tr>
+<tr><td>2026-02-09 12:02:59</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20681.1 a.u. at 88.4 s</td></tr>
+<tr><td>2026-02-09 12:02:59</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 88.4 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:01</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 45049.0 a.u. at Lmax 545.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:01</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20713.1 a.u. at 89.9 s</td></tr>
+<tr><td>2026-02-09 12:03:01</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 89.9 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:02</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 56250.2 a.u. at Lmax 542.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:02</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 25820.7 a.u. at 91.4 s</td></tr>
+<tr><td>2026-02-09 12:03:02</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 91.4 s (+1.5 s) - OVERFLOW!</td></tr>
+<tr><td>2026-02-09 12:03:03</td><td style='color: #1e90ff'>LED</td><td style='color: #ff0000'><strong>ERROR:</strong> Timeout waiting for LED controller response</td></tr>
+<tr><td>2026-02-09 12:03:04</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 55505.7 a.u. at Lmax 545.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:04</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 26199.3 a.u. at 93.4 s</td></tr>
+<tr><td>2026-02-09 12:03:04</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 93.4 s (+2.0 s) - OVERFLOW!</td></tr>
+<tr><td>2026-02-09 12:03:06</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 56659.4 a.u. at Lmax 550.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:06</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 26257.4 a.u. at 94.9 s</td></tr>
+<tr><td>2026-02-09 12:03:06</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 94.9 s (+1.5 s) - OVERFLOW!</td></tr>
+<tr><td>2026-02-09 12:03:07</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 48677.0 a.u. at Lmax 550.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:07</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 21930.9 a.u. at 96.4 s</td></tr>
+<tr><td>2026-02-09 12:03:07</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 96.4 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:08</td><td style='color: #1e90ff'>LED</td><td style='color: #ff0000'><strong>ERROR:</strong> Timeout waiting for LED controller response</td></tr>
+<tr><td>2026-02-09 12:03:09</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 46958.7 a.u. at Lmax 543.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:09</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 22117.3 a.u. at 98.5 s</td></tr>
+<tr><td>2026-02-09 12:03:09</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 98.5 s (+2.1 s)</td></tr>
+<tr><td>2026-02-09 12:03:11</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 47411.3 a.u. at Lmax 553.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:11</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 22044.9 a.u. at 100.0 s</td></tr>
+<tr><td>2026-02-09 12:03:11</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 100.0 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:12</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 47073.1 a.u. at Lmax 542.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:12</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 22158.9 a.u. at 101.5 s</td></tr>
+<tr><td>2026-02-09 12:03:12</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 101.5 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:14</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 48183.6 a.u. at Lmax 544.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:14</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 21947.9 a.u. at 103.0 s</td></tr>
+<tr><td>2026-02-09 12:03:14</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 103.0 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:15</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 47839.1 a.u. at Lmax 552.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:15</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 22253.9 a.u. at 104.5 s</td></tr>
+<tr><td>2026-02-09 12:03:15</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 104.5 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:17</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 46886.3 a.u. at Lmax 557.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:17</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 21979.4 a.u. at 106.0 s</td></tr>
+<tr><td>2026-02-09 12:03:17</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 106.0 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:17</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Data reading paused</td></tr>
+<tr><td>2026-02-09 12:03:20</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Data reading resumed</td></tr>
+<tr><td>2026-02-09 12:03:21</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 48097.8 a.u. at Lmax 548.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:21</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 22121.4 a.u. at 109.9 s</td></tr>
+<tr><td>2026-02-09 12:03:21</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 109.9 s (+3.9 s)</td></tr>
+<tr><td>2026-02-09 12:03:22</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 48526.4 a.u. at Lmax 546.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:22</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 21916.7 a.u. at 111.4 s</td></tr>
+<tr><td>2026-02-09 12:03:22</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 111.4 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:24</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 47069.9 a.u. at Lmax 543.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:24</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 22071.8 a.u. at 112.9 s</td></tr>
+<tr><td>2026-02-09 12:03:24</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 112.9 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:25</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New baseline has been recorded</td></tr>
+<tr><td>2026-02-09 12:03:26</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 3636.3 a.u. at Lmax 878.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:26</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: -573.1 a.u. at 115.5 s</td></tr>
+<tr><td>2026-02-09 12:03:26</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 115.5 s (+2.6 s)</td></tr>
+<tr><td>2026-02-09 12:03:28</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 4514.6 a.u. at Lmax 712.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:28</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: -578.5 a.u. at 117.0 s</td></tr>
+<tr><td>2026-02-09 12:03:28</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 117.0 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:29</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 2749.4 a.u. at Lmax 529.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:29</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: -447.5 a.u. at 118.5 s</td></tr>
+<tr><td>2026-02-09 12:03:29</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 118.5 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:31</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 3186.6 a.u. at Lmax 709.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:31</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: -602.7 a.u. at 120.0 s</td></tr>
+<tr><td>2026-02-09 12:03:31</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 120.0 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:32</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Spectrometer data reading restarted, previous emission data erased</td></tr>
+<tr><td>2026-02-09 12:03:32</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 3963.6 a.u. at Lmax 415.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:32</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: -792.8 a.u. at 0.0 s</td></tr>
+<tr><td>2026-02-09 12:03:32</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 0 s</td></tr>
+<tr><td>2026-02-09 12:03:34</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 3392.1 a.u. at Lmax 812.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:34</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: -18401.4 a.u. at 1.5 s</td></tr>
+<tr><td>2026-02-09 12:03:34</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 1.5 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:34</td><td style='color: #1e90ff'>LED</td><td style='color: #1e90ff'>LED brightness adjusted to 0%</td></tr>
+<tr><td>2026-02-09 12:03:36</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 2873.5 a.u. at Lmax 812.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:36</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: -22795.7 a.u. at 3.1 s</td></tr>
+<tr><td>2026-02-09 12:03:36</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 3.1 s (+1.6 s)</td></tr>
+<tr><td>2026-02-09 12:03:37</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 2873.5 a.u. at Lmax 812.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:37</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: -22795.7 a.u. at 4.6 s</td></tr>
+<tr><td>2026-02-09 12:03:37</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 4.6 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:39</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 2873.5 a.u. at Lmax 812.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:39</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: -22795.7 a.u. at 6.1 s</td></tr>
+<tr><td>2026-02-09 12:03:39</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 6.1 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:40</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 2873.5 a.u. at Lmax 812.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:40</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: -22795.7 a.u. at 7.6 s</td></tr>
+<tr><td>2026-02-09 12:03:40</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 7.6 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:41</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New baseline has been recorded</td></tr>
+<tr><td>2026-02-09 12:03:43</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:43</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 10.2 s</td></tr>
+<tr><td>2026-02-09 12:03:43</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 10.2 s (+2.6 s)</td></tr>
+<tr><td>2026-02-09 12:03:44</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:44</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 11.7 s</td></tr>
+<tr><td>2026-02-09 12:03:44</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 11.7 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:45</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Spectrometer data reading restarted, previous emission data erased</td></tr>
+<tr><td>2026-02-09 12:03:46</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:46</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 0.0 s</td></tr>
+<tr><td>2026-02-09 12:03:46</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 0 s</td></tr>
+<tr><td>2026-02-09 12:03:47</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:47</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 1.5 s</td></tr>
+<tr><td>2026-02-09 12:03:47</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 1.5 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:49</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:49</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 3.0 s</td></tr>
+<tr><td>2026-02-09 12:03:49</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 3.0 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:50</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:50</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 4.5 s</td></tr>
+<tr><td>2026-02-09 12:03:50</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 4.5 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:51</td><td style='color: #1e90ff'>LED</td><td style='color: #1e90ff'>LED brightness adjusted to 80%</td></tr>
+<tr><td>2026-02-09 12:03:52</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44581.6 a.u. at Lmax 544.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:52</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20609.9 a.u. at 6.0 s</td></tr>
+<tr><td>2026-02-09 12:03:52</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 6.0 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:53</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 45603.4 a.u. at Lmax 542.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:53</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20664.0 a.u. at 7.5 s</td></tr>
+<tr><td>2026-02-09 12:03:53</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 7.5 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:55</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44057.6 a.u. at Lmax 546.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:55</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20628.5 a.u. at 9.0 s</td></tr>
+<tr><td>2026-02-09 12:03:55</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 9.0 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:56</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 45660.2 a.u. at Lmax 548.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:56</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20814.4 a.u. at 10.5 s</td></tr>
+<tr><td>2026-02-09 12:03:56</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 10.5 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:57</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Set NumOfSpectraPerDatapoint = 5</td></tr>
+<tr><td>2026-02-09 12:03:57</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Set integration_time = 100000</td></tr>
+<tr><td>2026-02-09 12:03:57</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Integration time = 100000 us</td></tr>
+<tr><td>2026-02-09 12:03:57</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Set boxcarSMA = 10</td></tr>
+<tr><td>2026-02-09 12:03:57</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Set acquisition_delay = 1000</td></tr>
+<tr><td>2026-02-09 12:03:57</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Set detection_Lmin = 470</td></tr>
+<tr><td>2026-02-09 12:03:57</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Set detection_Lmax = 700</td></tr>
+<tr><td>2026-02-09 12:03:58</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 45776.0 a.u. at Lmax 548.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:58</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20929.7 a.u. at 12.0 s</td></tr>
+<tr><td>2026-02-09 12:03:58</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 12.0 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:03:59</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44149.9 a.u. at Lmax 552.0 nm</td></tr>
+<tr><td>2026-02-09 12:03:59</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20658.4 a.u. at 13.5 s</td></tr>
+<tr><td>2026-02-09 12:03:59</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 13.5 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:00</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Data reading paused</td></tr>
+<tr><td>2026-02-09 12:04:02</td><td style='color: #cccccc'>gui</td><td style='color: #cccccc'>Loaded an experiment 'Test1' from experiment_test.csv</td></tr>
+<tr><td>2026-02-09 12:04:04</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Data reading paused</td></tr>
+<tr><td>2026-02-09 12:04:04</td><td style='color: #cccccc'>files</td><td style='color: #cccccc'>Syringe settings loaded from C:\Users\abutkev\PycharmProjects\SV\Rsc\syringes.csv</td></tr>
+<tr><td>2026-02-09 12:04:04</td><td style='color: #cccccc'>gui</td><td style='color: #cccccc'>Default syringe settings loaded for Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:04:04</td><td style='color: #cccccc'>gui</td><td style='color: #cccccc'>Default syringe settings loaded for Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:04:04</td><td style='color: #cccccc'>gui</td><td style='color: #cccccc'>Default syringe settings loaded for Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #cccccc'>gui</td><td style='color: #cccccc'>Pumps priming program written</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Spectrometer data reading restarted, previous emission data erased</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Pump scheduler starting 'Priming pumps' sequence</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 0.00 s (scheduled at 0.00 s): Set diameter Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< DIA 12.50 (set_diameter)</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_diameter took 21.46 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< DIA (set_diameter)</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_diameter took 10.78 ms, response: 00S12.50</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): syringe diameter set to 12.50 mm</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 0.31 s (scheduled at 0.30 s): Set volume Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< VOL 0.10 (set_volume)</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_volume took 11.0 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< VOL (set_volume)</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_volume took 10.55 ms, response: 00S0.100ML</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): volume set to 0.1 ML</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44019.8 a.u. at Lmax 547.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20540.4 a.u. at 0.0 s</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 0 s</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 0.61 s (scheduled at 0.60 s): Set rate Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT 3.000MM (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 20.67 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 10.55 ms, response: 00S3.000MM</td></tr>
+<tr><td>2026-02-09 12:04:12</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): pumping rate set to 3.0 mL/min</td></tr>
+<tr><td>2026-02-09 12:04:13</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 0.91 s (scheduled at 0.90 s): Run Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:04:13</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RUN (run)</td></tr>
+<tr><td>2026-02-09 12:04:13</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> run took 21.22 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:04:13</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): pump is running (mode: INFUSE)</td></tr>
+<tr><td>2026-02-09 12:04:13</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 1.20 s (scheduled at 1.20 s): Poll Pump2 (Catalyst) at 1.20s</td></tr>
+<tr><td>2026-02-09 12:04:14</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44573.0 a.u. at Lmax 552.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:14</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20819.1 a.u. at 1.5 s</td></tr>
+<tr><td>2026-02-09 12:04:14</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 1.5 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:14</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 2.22 s (scheduled at 2.20 s): Poll Pump2 (Catalyst) at 2.20s</td></tr>
+<tr><td>2026-02-09 12:04:15</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 3.20 s (scheduled at 3.20 s): Stop Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:04:15</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< STP (stop)</td></tr>
+<tr><td>2026-02-09 12:04:15</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> stop took 10.69 ms, response: 00S?NA</td></tr>
+<tr><td>2026-02-09 12:04:15</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): pump is stopped</td></tr>
+<tr><td>2026-02-09 12:04:15</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 3.50 s (scheduled at 3.50 s): Clear volume Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:04:15</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< VOL 0.00 (set_volume)</td></tr>
+<tr><td>2026-02-09 12:04:15</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_volume took 10.88 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:04:15</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< VOL (set_volume)</td></tr>
+<tr><td>2026-02-09 12:04:15</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_volume took 21.34 ms, response: 00S0.000ML</td></tr>
+<tr><td>2026-02-09 12:04:15</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): volume set to 0.0 ML</td></tr>
+<tr><td>2026-02-09 12:04:15</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 46235.1 a.u. at Lmax 549.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:15</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20911.9 a.u. at 3.0 s</td></tr>
+<tr><td>2026-02-09 12:04:15</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 3.0 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 3.81 s (scheduled at 3.80 s): Set diameter Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< DIA 12.50 (set_diameter)</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_diameter took 20.97 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< DIA (set_diameter)</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_diameter took 10.53 ms, response: 00S12.50</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): syringe diameter set to 12.50 mm</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 4.11 s (scheduled at 4.10 s): Set volume Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< VOL 0.10 (set_volume)</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_volume took 10.74 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< VOL (set_volume)</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_volume took 11.04 ms, response: 00S0.100ML</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): volume set to 0.1 ML</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 4.41 s (scheduled at 4.40 s): Set rate Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT 3.000MM (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 21.7 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 20.95 ms, response: 00S3.000MM</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): pumping rate set to 3.0 mL/min</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 4.70 s (scheduled at 4.70 s): Run Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RUN (run)</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> run took 20.98 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:04:16</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): pump is running (mode: INFUSE)</td></tr>
+<tr><td>2026-02-09 12:04:17</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 5.00 s (scheduled at 5.00 s): Poll Pump3 (Quencher) at 5.00s</td></tr>
+<tr><td>2026-02-09 12:04:17</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44259.5 a.u. at Lmax 549.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:17</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20745.3 a.u. at 4.5 s</td></tr>
+<tr><td>2026-02-09 12:04:17</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 4.5 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:18</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 6.00 s (scheduled at 6.00 s): Poll Pump3 (Quencher) at 6.00s</td></tr>
+<tr><td>2026-02-09 12:04:18</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 45241.1 a.u. at Lmax 547.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:18</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 21033.9 a.u. at 6.0 s</td></tr>
+<tr><td>2026-02-09 12:04:18</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 6.0 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:19</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 7.00 s (scheduled at 7.00 s): Stop Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:04:19</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< STP (stop)</td></tr>
+<tr><td>2026-02-09 12:04:19</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> stop took 10.68 ms, response: 00S?NA</td></tr>
+<tr><td>2026-02-09 12:04:19</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): pump is stopped</td></tr>
+<tr><td>2026-02-09 12:04:19</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 7.31 s (scheduled at 7.30 s): Clear volume Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:04:19</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< VOL 0.00 (set_volume)</td></tr>
+<tr><td>2026-02-09 12:04:19</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_volume took 10.62 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:04:19</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< VOL (set_volume)</td></tr>
+<tr><td>2026-02-09 12:04:19</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_volume took 21.03 ms, response: 00S0.000ML</td></tr>
+<tr><td>2026-02-09 12:04:19</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): volume set to 0.0 ML</td></tr>
+<tr><td>2026-02-09 12:04:19</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 7.61 s (scheduled at 7.60 s): Set diameter Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:04:19</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< DIA 12.50 (set_diameter)</td></tr>
+<tr><td>2026-02-09 12:04:19</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_diameter took 21.49 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:04:19</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< DIA (set_diameter)</td></tr>
+<tr><td>2026-02-09 12:04:19</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_diameter took 10.7 ms, response: 00S12.50</td></tr>
+<tr><td>2026-02-09 12:04:19</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): syringe diameter set to 12.50 mm</td></tr>
+<tr><td>2026-02-09 12:04:20</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 7.91 s (scheduled at 7.90 s): Set volume Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:04:20</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< VOL 0.10 (set_volume)</td></tr>
+<tr><td>2026-02-09 12:04:20</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_volume took 10.54 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:04:20</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< VOL (set_volume)</td></tr>
+<tr><td>2026-02-09 12:04:20</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_volume took 21.72 ms, response: 00S0.100ML</td></tr>
+<tr><td>2026-02-09 12:04:20</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): volume set to 0.1 ML</td></tr>
+<tr><td>2026-02-09 12:04:20</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44828.4 a.u. at Lmax 548.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:20</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20575.7 a.u. at 7.5 s</td></tr>
+<tr><td>2026-02-09 12:04:20</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 7.5 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:20</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 8.20 s (scheduled at 8.20 s): Set rate Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:04:20</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT 3.000MM (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:20</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 21.14 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:04:20</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:20</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 10.9 ms, response: 00S3.000MM</td></tr>
+<tr><td>2026-02-09 12:04:20</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): pumping rate set to 3.0 mL/min</td></tr>
+<tr><td>2026-02-09 12:04:20</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 8.50 s (scheduled at 8.50 s): Run Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:04:20</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RUN (run)</td></tr>
+<tr><td>2026-02-09 12:04:20</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> run took 29.93 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:04:20</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): pump is running (mode: INFUSE)</td></tr>
+<tr><td>2026-02-09 12:04:21</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 8.81 s (scheduled at 8.80 s): Poll Pump1 (Solvent) at 8.80s</td></tr>
+<tr><td>2026-02-09 12:04:21</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 45837.2 a.u. at Lmax 550.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:21</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20708.6 a.u. at 9.0 s</td></tr>
+<tr><td>2026-02-09 12:04:21</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 9.0 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:22</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 9.81 s (scheduled at 9.80 s): Poll Pump1 (Solvent) at 9.80s</td></tr>
+<tr><td>2026-02-09 12:04:23</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 10.81 s (scheduled at 10.80 s): Stop Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:04:23</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< STP (stop)</td></tr>
+<tr><td>2026-02-09 12:04:23</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> stop took 11.0 ms, response: 00S?NA</td></tr>
+<tr><td>2026-02-09 12:04:23</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): pump is stopped</td></tr>
+<tr><td>2026-02-09 12:04:23</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 45193.0 a.u. at Lmax 542.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:23</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20956.2 a.u. at 10.5 s</td></tr>
+<tr><td>2026-02-09 12:04:23</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 10.5 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:23</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 11.11 s (scheduled at 11.10 s): Clear volume Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:04:23</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< VOL 0.00 (set_volume)</td></tr>
+<tr><td>2026-02-09 12:04:23</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_volume took 10.94 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:04:23</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< VOL (set_volume)</td></tr>
+<tr><td>2026-02-09 12:04:23</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_volume took 10.13 ms, response: 00S0.000ML</td></tr>
+<tr><td>2026-02-09 12:04:23</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): volume set to 0.0 ML</td></tr>
+<tr><td>2026-02-09 12:04:23</td><td style='color: #ffa500'>controller</td><td style='color: #ffa500'>Priming completed successfully</td></tr>
+<tr><td>2026-02-09 12:04:23</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 11.41 s (scheduled at 11.40 s): Finalize sequence state</td></tr>
+<tr><td>2026-02-09 12:04:23</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Pump scheduler finished all actions of 'Priming pumps' sequence</td></tr>
+<tr><td>2026-02-09 12:04:24</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 45893.8 a.u. at Lmax 552.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:24</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 21133.3 a.u. at 12.0 s</td></tr>
+<tr><td>2026-02-09 12:04:24</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 12.0 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:26</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44842.2 a.u. at Lmax 545.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:26</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20759.1 a.u. at 13.5 s</td></tr>
+<tr><td>2026-02-09 12:04:26</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 13.5 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:27</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 45637.6 a.u. at Lmax 553.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:27</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20669.7 a.u. at 15.0 s</td></tr>
+<tr><td>2026-02-09 12:04:27</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 15.0 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:28</td><td style='color: #cccccc'>files</td><td style='color: #cccccc'>Created a 2D spectrum file 'C:\Users\abutkev\PycharmProjects\SV\results\2026-02-09_12-04-28_experiment_test.csv_2Dspectrum.csv</td></tr>
+<tr><td>2026-02-09 12:04:28</td><td style='color: #cccccc'>files</td><td style='color: #cccccc'>Created fluorescence emission file 'C:\Users\abutkev\PycharmProjects\SV\results\2026-02-09_12-04-28_experiment_test.csv_emission.csv</td></tr>
+<tr><td>2026-02-09 12:04:28</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>Spectrometer data reading restarted, previous emission data erased</td></tr>
+<tr><td>2026-02-09 12:04:28</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Pump scheduler starting 'Experiment Test1' sequence</td></tr>
+<tr><td>2026-02-09 12:04:28</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 0.00 s (scheduled at 0.00 s): Set flow 2.0 on Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:04:28</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT 2.000MM (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:28</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 20.72 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:04:28</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:28</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 10.59 ms, response: 00S2.000MM</td></tr>
+<tr><td>2026-02-09 12:04:28</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): pumping rate set to 2.0 mL/min</td></tr>
+<tr><td>2026-02-09 12:04:29</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 0.31 s (scheduled at 0.30 s): Set flow 0.0 on Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:04:29</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT 0.000MM (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:29</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 21.18 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:04:29</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:29</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 10.9 ms, response: 00S0.000MM</td></tr>
+<tr><td>2026-02-09 12:04:29</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): pumping rate set to 0.000 mL/min</td></tr>
+<tr><td>2026-02-09 12:04:29</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:29</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 0.0 s</td></tr>
+<tr><td>2026-02-09 12:04:29</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>0 steps detected</td></tr>
+<tr><td>2026-02-09 12:04:29</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 0 s</td></tr>
+<tr><td>2026-02-09 12:04:29</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 0.61 s (scheduled at 0.60 s): Set flow 0.0 on Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:04:29</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT 0.000MM (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:29</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 21.55 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:04:29</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:29</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 10.53 ms, response: 00S0.000MM</td></tr>
+<tr><td>2026-02-09 12:04:29</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): pumping rate set to 0.000 mL/min</td></tr>
+<tr><td>2026-02-09 12:04:29</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 0.91 s (scheduled at 0.90 s): Poll at 0.90s</td></tr>
+<tr><td>2026-02-09 12:04:29</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 1.20 s (scheduled at 1.20 s): Run Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:04:29</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RUN (run)</td></tr>
+<tr><td>2026-02-09 12:04:29</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> run took 21.54 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:04:29</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): pump is running (mode: INFUSE)</td></tr>
+<tr><td>2026-02-09 12:04:30</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 1.91 s (scheduled at 1.90 s): Poll at 1.90s</td></tr>
+<tr><td>2026-02-09 12:04:30</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:30</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 1.5 s</td></tr>
+<tr><td>2026-02-09 12:04:30</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>0 steps detected</td></tr>
+<tr><td>2026-02-09 12:04:30</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 1.5 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:31</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 2.91 s (scheduled at 2.90 s): Poll at 2.90s</td></tr>
+<tr><td>2026-02-09 12:04:32</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:32</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 3.0 s</td></tr>
+<tr><td>2026-02-09 12:04:32</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>0 steps detected</td></tr>
+<tr><td>2026-02-09 12:04:32</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 3.0 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:32</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 3.91 s (scheduled at 3.90 s): Poll at 3.90s</td></tr>
+<tr><td>2026-02-09 12:04:33</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 4.91 s (scheduled at 4.90 s): Poll at 4.90s</td></tr>
+<tr><td>2026-02-09 12:04:33</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:33</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 4.5 s</td></tr>
+<tr><td>2026-02-09 12:04:33</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>0 steps detected</td></tr>
+<tr><td>2026-02-09 12:04:33</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 4.5 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:34</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 5.91 s (scheduled at 5.90 s): Poll at 5.90s</td></tr>
+<tr><td>2026-02-09 12:04:35</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:35</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 6.1 s</td></tr>
+<tr><td>2026-02-09 12:04:35</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>0 steps detected</td></tr>
+<tr><td>2026-02-09 12:04:35</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 6.1 s (+1.6 s)</td></tr>
+<tr><td>2026-02-09 12:04:35</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 6.92 s (scheduled at 6.90 s): Poll at 6.90s</td></tr>
+<tr><td>2026-02-09 12:04:36</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 7.91 s (scheduled at 7.90 s): Poll at 7.90s</td></tr>
+<tr><td>2026-02-09 12:04:36</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:36</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 7.6 s</td></tr>
+<tr><td>2026-02-09 12:04:36</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>0 steps detected</td></tr>
+<tr><td>2026-02-09 12:04:36</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 7.6 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:37</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 8.91 s (scheduled at 8.90 s): Poll at 8.90s</td></tr>
+<tr><td>2026-02-09 12:04:38</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:38</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 9.1 s</td></tr>
+<tr><td>2026-02-09 12:04:38</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>0 steps detected</td></tr>
+<tr><td>2026-02-09 12:04:38</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 9.1 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:38</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 9.91 s (scheduled at 9.90 s): Poll at 9.90s</td></tr>
+<tr><td>2026-02-09 12:04:39</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 10.91 s (scheduled at 10.90 s): Poll at 10.90s</td></tr>
+<tr><td>2026-02-09 12:04:39</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:39</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 10.6 s</td></tr>
+<tr><td>2026-02-09 12:04:39</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>0 steps detected</td></tr>
+<tr><td>2026-02-09 12:04:39</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 10.6 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:40</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 11.91 s (scheduled at 11.90 s): Poll at 11.90s</td></tr>
+<tr><td>2026-02-09 12:04:41</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:41</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 12.1 s</td></tr>
+<tr><td>2026-02-09 12:04:41</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>0 steps detected</td></tr>
+<tr><td>2026-02-09 12:04:41</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 12.1 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:41</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 12.91 s (scheduled at 12.90 s): Poll at 12.90s</td></tr>
+<tr><td>2026-02-09 12:04:42</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 13.91 s (scheduled at 13.90 s): Poll at 13.90s</td></tr>
+<tr><td>2026-02-09 12:04:42</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:42</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 13.6 s</td></tr>
+<tr><td>2026-02-09 12:04:42</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>0 steps detected</td></tr>
+<tr><td>2026-02-09 12:04:42</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 13.6 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:43</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 14.91 s (scheduled at 14.90 s): Poll at 14.90s</td></tr>
+<tr><td>2026-02-09 12:04:44</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:44</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 15.1 s</td></tr>
+<tr><td>2026-02-09 12:04:44</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>0 steps detected</td></tr>
+<tr><td>2026-02-09 12:04:44</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 15.1 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:44</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 15.92 s (scheduled at 15.90 s): Poll at 15.90s</td></tr>
+<tr><td>2026-02-09 12:04:45</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 16.91 s (scheduled at 16.90 s): Poll at 16.90s</td></tr>
+<tr><td>2026-02-09 12:04:45</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:45</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 16.6 s</td></tr>
+<tr><td>2026-02-09 12:04:45</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>0 steps detected</td></tr>
+<tr><td>2026-02-09 12:04:45</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 16.6 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:46</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 17.91 s (scheduled at 17.90 s): Poll at 17.90s</td></tr>
+<tr><td>2026-02-09 12:04:46</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 18.00 s (scheduled at 18.00 s): Set flow 1.5 on Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:04:46</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT C 1.500 (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:46</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 21.32 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:04:46</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:46</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 10.53 ms, response: 00I1.500MM</td></tr>
+<tr><td>2026-02-09 12:04:46</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): pumping rate set to 1.5 mL/min</td></tr>
+<tr><td>2026-02-09 12:04:47</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 18.31 s (scheduled at 18.30 s): Set flow 0.5 on Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:04:47</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT 0.500MM (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:47</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 20.62 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:04:47</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:47</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 11.12 ms, response: 00S0.500MM</td></tr>
+<tr><td>2026-02-09 12:04:47</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): pumping rate set to 0.5 mL/min</td></tr>
+<tr><td>2026-02-09 12:04:47</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 18.61 s (scheduled at 18.60 s): Set flow 0.0 on Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:04:47</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT 0.000MM (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:47</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 10.55 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:04:47</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:47</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 10.66 ms, response: 00S0.000MM</td></tr>
+<tr><td>2026-02-09 12:04:47</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): pumping rate set to 0.000 mL/min</td></tr>
+<tr><td>2026-02-09 12:04:47</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:47</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 18.1 s</td></tr>
+<tr><td>2026-02-09 12:04:47</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>0 steps detected</td></tr>
+<tr><td>2026-02-09 12:04:47</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 18.1 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:47</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 18.91 s (scheduled at 18.90 s): Poll at 18.90s</td></tr>
+<tr><td>2026-02-09 12:04:47</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 19.20 s (scheduled at 19.20 s): Run Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:04:47</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RUN (run)</td></tr>
+<tr><td>2026-02-09 12:04:47</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> run took 21.12 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:04:47</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): pump is running (mode: INFUSE)</td></tr>
+<tr><td>2026-02-09 12:04:48</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 19.91 s (scheduled at 19.90 s): Poll at 19.90s</td></tr>
+<tr><td>2026-02-09 12:04:48</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44173.9 a.u. at Lmax 552.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:48</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20911.5 a.u. at 19.6 s</td></tr>
+<tr><td>2026-02-09 12:04:48</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:04:48</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 19.6 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:49</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 20.91 s (scheduled at 20.90 s): Poll at 20.90s</td></tr>
+<tr><td>2026-02-09 12:04:50</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44259.1 a.u. at Lmax 549.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:50</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20800.0 a.u. at 21.1 s</td></tr>
+<tr><td>2026-02-09 12:04:50</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:04:50</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 21.1 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:50</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 21.91 s (scheduled at 21.90 s): Poll at 21.90s</td></tr>
+<tr><td>2026-02-09 12:04:51</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 22.91 s (scheduled at 22.90 s): Poll at 22.90s</td></tr>
+<tr><td>2026-02-09 12:04:51</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44412.7 a.u. at Lmax 546.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:51</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20940.4 a.u. at 22.6 s</td></tr>
+<tr><td>2026-02-09 12:04:51</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:04:51</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 22.6 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:52</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 23.91 s (scheduled at 23.90 s): Poll at 23.90s</td></tr>
+<tr><td>2026-02-09 12:04:53</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44644.7 a.u. at Lmax 553.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:53</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20451.3 a.u. at 24.1 s</td></tr>
+<tr><td>2026-02-09 12:04:53</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:04:53</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 24.1 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:53</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 24.94 s (scheduled at 24.90 s): Poll at 24.90s</td></tr>
+<tr><td>2026-02-09 12:04:54</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 25.91 s (scheduled at 25.90 s): Poll at 25.90s</td></tr>
+<tr><td>2026-02-09 12:04:54</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44142.8 a.u. at Lmax 554.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:54</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20706.0 a.u. at 25.6 s</td></tr>
+<tr><td>2026-02-09 12:04:54</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:04:54</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 25.6 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:55</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 26.91 s (scheduled at 26.90 s): Poll at 26.90s</td></tr>
+<tr><td>2026-02-09 12:04:56</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44900.3 a.u. at Lmax 549.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:56</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20740.5 a.u. at 27.1 s</td></tr>
+<tr><td>2026-02-09 12:04:56</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:04:56</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 27.1 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:56</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 27.91 s (scheduled at 27.90 s): Poll at 27.90s</td></tr>
+<tr><td>2026-02-09 12:04:57</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 28.91 s (scheduled at 28.90 s): Poll at 28.90s</td></tr>
+<tr><td>2026-02-09 12:04:57</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 43316.1 a.u. at Lmax 545.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:57</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20660.0 a.u. at 28.6 s</td></tr>
+<tr><td>2026-02-09 12:04:57</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:04:57</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 28.6 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:58</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 29.91 s (scheduled at 29.90 s): Poll at 29.90s</td></tr>
+<tr><td>2026-02-09 12:04:58</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 30.00 s (scheduled at 30.00 s): Set flow 1.25 on Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:04:58</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT C 1.250 (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:58</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 21.47 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:04:58</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:58</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 10.83 ms, response: 00I1.250MM</td></tr>
+<tr><td>2026-02-09 12:04:58</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): pumping rate set to 1.25 mL/min</td></tr>
+<tr><td>2026-02-09 12:04:59</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 30.31 s (scheduled at 30.30 s): Set flow 0.5 on Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:04:59</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT C 0.500 (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:59</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 20.97 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:04:59</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:59</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 10.56 ms, response: 00I0.500MM</td></tr>
+<tr><td>2026-02-09 12:04:59</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): pumping rate set to 0.5 mL/min</td></tr>
+<tr><td>2026-02-09 12:04:59</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 30.61 s (scheduled at 30.60 s): Set flow 0.25 on Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:04:59</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT 0.250MM (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:59</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 20.85 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:04:59</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:04:59</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 10.72 ms, response: 00S0.250MM</td></tr>
+<tr><td>2026-02-09 12:04:59</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): pumping rate set to 0.25 mL/min</td></tr>
+<tr><td>2026-02-09 12:04:59</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44837.2 a.u. at Lmax 551.0 nm</td></tr>
+<tr><td>2026-02-09 12:04:59</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 21047.7 a.u. at 30.1 s</td></tr>
+<tr><td>2026-02-09 12:04:59</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:04:59</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 30.1 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:04:59</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 30.91 s (scheduled at 30.90 s): Poll at 30.90s</td></tr>
+<tr><td>2026-02-09 12:04:59</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 31.20 s (scheduled at 31.20 s): Run Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:04:59</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RUN (run)</td></tr>
+<tr><td>2026-02-09 12:05:00</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> run took 21.33 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:05:00</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): pump is running (mode: INFUSE)</td></tr>
+<tr><td>2026-02-09 12:05:00</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 31.91 s (scheduled at 31.90 s): Poll at 31.90s</td></tr>
+<tr><td>2026-02-09 12:05:00</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 29343.6 a.u. at Lmax 541.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:00</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 13907.5 a.u. at 31.6 s</td></tr>
+<tr><td>2026-02-09 12:05:00</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:00</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 31.6 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:01</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 32.91 s (scheduled at 32.90 s): Poll at 32.90s</td></tr>
+<tr><td>2026-02-09 12:05:02</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 30248.6 a.u. at Lmax 554.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:02</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 13706.7 a.u. at 33.1 s</td></tr>
+<tr><td>2026-02-09 12:05:02</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:02</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 33.1 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:02</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 33.95 s (scheduled at 33.90 s): Poll at 33.90s</td></tr>
+<tr><td>2026-02-09 12:05:03</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 34.91 s (scheduled at 34.90 s): Poll at 34.90s</td></tr>
+<tr><td>2026-02-09 12:05:03</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 29612.1 a.u. at Lmax 545.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:03</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 13799.8 a.u. at 34.6 s</td></tr>
+<tr><td>2026-02-09 12:05:03</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:03</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 34.6 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:04</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 35.91 s (scheduled at 35.90 s): Poll at 35.90s</td></tr>
+<tr><td>2026-02-09 12:05:05</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 30009.0 a.u. at Lmax 550.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:05</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 13830.8 a.u. at 36.1 s</td></tr>
+<tr><td>2026-02-09 12:05:05</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:05</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 36.1 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:05</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 36.91 s (scheduled at 36.90 s): Poll at 36.90s</td></tr>
+<tr><td>2026-02-09 12:05:06</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 37.91 s (scheduled at 37.90 s): Poll at 37.90s</td></tr>
+<tr><td>2026-02-09 12:05:06</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 29535.5 a.u. at Lmax 542.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:06</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 13888.6 a.u. at 37.6 s</td></tr>
+<tr><td>2026-02-09 12:05:06</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:06</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 37.6 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:07</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 38.91 s (scheduled at 38.90 s): Poll at 38.90s</td></tr>
+<tr><td>2026-02-09 12:05:08</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 29761.1 a.u. at Lmax 542.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:08</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 13823.5 a.u. at 39.1 s</td></tr>
+<tr><td>2026-02-09 12:05:08</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:08</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 39.1 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:08</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 39.91 s (scheduled at 39.90 s): Poll at 39.90s</td></tr>
+<tr><td>2026-02-09 12:05:09</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 40.91 s (scheduled at 40.90 s): Poll at 40.90s</td></tr>
+<tr><td>2026-02-09 12:05:09</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 30152.2 a.u. at Lmax 542.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:09</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 13831.1 a.u. at 40.6 s</td></tr>
+<tr><td>2026-02-09 12:05:09</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:09</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 40.6 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:10</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 41.91 s (scheduled at 41.90 s): Poll at 41.90s</td></tr>
+<tr><td>2026-02-09 12:05:10</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 42.00 s (scheduled at 42.00 s): Set flow 1.0 on Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:05:10</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT C 1.000 (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:10</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 20.7 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:05:10</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:10</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 10.59 ms, response: 00I1.000MM</td></tr>
+<tr><td>2026-02-09 12:05:10</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): pumping rate set to 1.0 mL/min</td></tr>
+<tr><td>2026-02-09 12:05:11</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 42.31 s (scheduled at 42.30 s): Set flow 0.5 on Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:05:11</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT C 0.500 (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:11</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 21.22 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:05:11</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:11</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 10.69 ms, response: 00I0.500MM</td></tr>
+<tr><td>2026-02-09 12:05:11</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): pumping rate set to 0.5 mL/min</td></tr>
+<tr><td>2026-02-09 12:05:11</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 42.61 s (scheduled at 42.60 s): Set flow 0.5 on Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:05:11</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT C 0.500 (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:11</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 21.1 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:05:11</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:11</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 11.14 ms, response: 00I0.500MM</td></tr>
+<tr><td>2026-02-09 12:05:11</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): pumping rate set to 0.5 mL/min</td></tr>
+<tr><td>2026-02-09 12:05:11</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 30377.9 a.u. at Lmax 552.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:11</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 13910.5 a.u. at 42.2 s</td></tr>
+<tr><td>2026-02-09 12:05:11</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:11</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 42.2 s (+1.6 s)</td></tr>
+<tr><td>2026-02-09 12:05:11</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 42.95 s (scheduled at 42.90 s): Poll at 42.90s</td></tr>
+<tr><td>2026-02-09 12:05:12</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 43.91 s (scheduled at 43.90 s): Poll at 43.90s</td></tr>
+<tr><td>2026-02-09 12:05:12</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 22076.7 a.u. at Lmax 541.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:12</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 10262.6 a.u. at 43.6 s</td></tr>
+<tr><td>2026-02-09 12:05:12</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:12</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 43.6 s (+1.4 s)</td></tr>
+<tr><td>2026-02-09 12:05:13</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 44.91 s (scheduled at 44.90 s): Poll at 44.90s</td></tr>
+<tr><td>2026-02-09 12:05:14</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 22685.9 a.u. at Lmax 551.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:14</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 10377.3 a.u. at 45.2 s</td></tr>
+<tr><td>2026-02-09 12:05:14</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:14</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 45.2 s (+1.6 s)</td></tr>
+<tr><td>2026-02-09 12:05:14</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 45.91 s (scheduled at 45.90 s): Poll at 45.90s</td></tr>
+<tr><td>2026-02-09 12:05:15</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 46.91 s (scheduled at 46.90 s): Poll at 46.90s</td></tr>
+<tr><td>2026-02-09 12:05:15</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 22296.0 a.u. at Lmax 548.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:15</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 10265.3 a.u. at 46.7 s</td></tr>
+<tr><td>2026-02-09 12:05:15</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:15</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 46.7 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:16</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 47.91 s (scheduled at 47.90 s): Poll at 47.90s</td></tr>
+<tr><td>2026-02-09 12:05:17</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 22213.0 a.u. at Lmax 548.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:17</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 10352.7 a.u. at 48.2 s</td></tr>
+<tr><td>2026-02-09 12:05:17</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:17</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 48.2 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:17</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 48.91 s (scheduled at 48.90 s): Poll at 48.90s</td></tr>
+<tr><td>2026-02-09 12:05:18</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 49.91 s (scheduled at 49.90 s): Poll at 49.90s</td></tr>
+<tr><td>2026-02-09 12:05:19</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 22471.3 a.u. at Lmax 548.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:19</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 10371.8 a.u. at 49.7 s</td></tr>
+<tr><td>2026-02-09 12:05:19</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:19</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 49.7 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:19</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 50.91 s (scheduled at 50.90 s): Poll at 50.90s</td></tr>
+<tr><td>2026-02-09 12:05:20</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 22387.3 a.u. at Lmax 548.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:20</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 10528.7 a.u. at 51.2 s</td></tr>
+<tr><td>2026-02-09 12:05:20</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:20</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 51.2 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:20</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 51.97 s (scheduled at 51.90 s): Poll at 51.90s</td></tr>
+<tr><td>2026-02-09 12:05:21</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 52.91 s (scheduled at 52.90 s): Poll at 52.90s</td></tr>
+<tr><td>2026-02-09 12:05:22</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 22264.8 a.u. at Lmax 551.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:22</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 10467.6 a.u. at 52.7 s</td></tr>
+<tr><td>2026-02-09 12:05:22</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:22</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 52.7 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:22</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 53.91 s (scheduled at 53.90 s): Poll at 53.90s</td></tr>
+<tr><td>2026-02-09 12:05:22</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 54.00 s (scheduled at 54.00 s): Set flow 0.75 on Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:05:22</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT C 0.750 (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:22</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 21.29 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:05:22</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:22</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 10.63 ms, response: 00I0.750MM</td></tr>
+<tr><td>2026-02-09 12:05:22</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): pumping rate set to 0.75 mL/min</td></tr>
+<tr><td>2026-02-09 12:05:23</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 54.31 s (scheduled at 54.30 s): Set flow 0.5 on Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:05:23</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT C 0.500 (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:23</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 21.35 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:05:23</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:23</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 10.62 ms, response: 00I0.500MM</td></tr>
+<tr><td>2026-02-09 12:05:23</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): pumping rate set to 0.5 mL/min</td></tr>
+<tr><td>2026-02-09 12:05:23</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 54.61 s (scheduled at 54.60 s): Set flow 0.75 on Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:05:23</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT C 0.750 (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:23</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 21.29 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:05:23</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:23</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 10.55 ms, response: 00I0.750MM</td></tr>
+<tr><td>2026-02-09 12:05:23</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): pumping rate set to 0.75 mL/min</td></tr>
+<tr><td>2026-02-09 12:05:23</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 22455.5 a.u. at Lmax 545.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:23</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 10587.9 a.u. at 54.2 s</td></tr>
+<tr><td>2026-02-09 12:05:23</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:23</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 54.2 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:23</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 54.91 s (scheduled at 54.90 s): Poll at 54.90s</td></tr>
+<tr><td>2026-02-09 12:05:24</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 55.91 s (scheduled at 55.90 s): Poll at 55.90s</td></tr>
+<tr><td>2026-02-09 12:05:25</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 17821.6 a.u. at Lmax 545.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:25</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 8193.0 a.u. at 55.7 s</td></tr>
+<tr><td>2026-02-09 12:05:25</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:25</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 55.7 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:25</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 56.91 s (scheduled at 56.90 s): Poll at 56.90s</td></tr>
+<tr><td>2026-02-09 12:05:26</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 17813.4 a.u. at Lmax 550.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:26</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 8277.1 a.u. at 57.2 s</td></tr>
+<tr><td>2026-02-09 12:05:26</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:26</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 57.2 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:26</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 57.91 s (scheduled at 57.90 s): Poll at 57.90s</td></tr>
+<tr><td>2026-02-09 12:05:27</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 58.91 s (scheduled at 58.90 s): Poll at 58.90s</td></tr>
+<tr><td>2026-02-09 12:05:28</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 17897.8 a.u. at Lmax 545.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:28</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 8365.6 a.u. at 58.7 s</td></tr>
+<tr><td>2026-02-09 12:05:28</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:28</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 58.7 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:28</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 59.91 s (scheduled at 59.90 s): Poll at 59.90s</td></tr>
+<tr><td>2026-02-09 12:05:29</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 18054.4 a.u. at Lmax 545.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:29</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 8338.6 a.u. at 60.2 s</td></tr>
+<tr><td>2026-02-09 12:05:29</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:29</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 60.2 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:29</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 60.91 s (scheduled at 60.90 s): Poll at 60.90s</td></tr>
+<tr><td>2026-02-09 12:05:30</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 61.91 s (scheduled at 61.90 s): Poll at 61.90s</td></tr>
+<tr><td>2026-02-09 12:05:31</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 18111.4 a.u. at Lmax 545.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:31</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 8282.9 a.u. at 61.7 s</td></tr>
+<tr><td>2026-02-09 12:05:31</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:31</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 61.7 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:31</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 62.91 s (scheduled at 62.90 s): Poll at 62.90s</td></tr>
+<tr><td>2026-02-09 12:05:32</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 17787.5 a.u. at Lmax 543.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:32</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 8326.5 a.u. at 63.2 s</td></tr>
+<tr><td>2026-02-09 12:05:32</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:32</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 63.2 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:32</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 63.91 s (scheduled at 63.90 s): Poll at 63.90s</td></tr>
+<tr><td>2026-02-09 12:05:33</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 64.91 s (scheduled at 64.90 s): Poll at 64.90s</td></tr>
+<tr><td>2026-02-09 12:05:34</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 17772.8 a.u. at Lmax 545.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:34</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 8314.7 a.u. at 64.7 s</td></tr>
+<tr><td>2026-02-09 12:05:34</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:34</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 64.7 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:34</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 65.91 s (scheduled at 65.90 s): Poll at 65.90s</td></tr>
+<tr><td>2026-02-09 12:05:34</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 66.00 s (scheduled at 66.00 s): Set flow 0.5 on Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:05:34</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT C 0.500 (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:34</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 20.7 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:05:34</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:34</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 10.8 ms, response: 00I0.500MM</td></tr>
+<tr><td>2026-02-09 12:05:34</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): pumping rate set to 0.5 mL/min</td></tr>
+<tr><td>2026-02-09 12:05:35</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 66.31 s (scheduled at 66.30 s): Set flow 0.5 on Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:05:35</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT C 0.500 (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:35</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 20.86 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:05:35</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:35</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 10.71 ms, response: 00I0.500MM</td></tr>
+<tr><td>2026-02-09 12:05:35</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): pumping rate set to 0.5 mL/min</td></tr>
+<tr><td>2026-02-09 12:05:35</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 66.61 s (scheduled at 66.60 s): Set flow 1.0 on Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:05:35</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT C 1.000 (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:35</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 21.32 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:05:35</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:35</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 10.69 ms, response: 00I1.000MM</td></tr>
+<tr><td>2026-02-09 12:05:35</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): pumping rate set to 1.0 mL/min</td></tr>
+<tr><td>2026-02-09 12:05:35</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 17909.8 a.u. at Lmax 551.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:35</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 8326.5 a.u. at 66.2 s</td></tr>
+<tr><td>2026-02-09 12:05:35</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:35</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 66.2 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:35</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 66.91 s (scheduled at 66.90 s): Poll at 66.90s</td></tr>
+<tr><td>2026-02-09 12:05:36</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 67.91 s (scheduled at 67.90 s): Poll at 67.90s</td></tr>
+<tr><td>2026-02-09 12:05:37</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 15372.3 a.u. at Lmax 552.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:37</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 6930.9 a.u. at 67.7 s</td></tr>
+<tr><td>2026-02-09 12:05:37</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:37</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 67.7 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:37</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 68.91 s (scheduled at 68.90 s): Poll at 68.90s</td></tr>
+<tr><td>2026-02-09 12:05:38</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 14652.7 a.u. at Lmax 541.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:38</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 6973.7 a.u. at 69.2 s</td></tr>
+<tr><td>2026-02-09 12:05:38</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:38</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 69.2 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:38</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 69.91 s (scheduled at 69.90 s): Poll at 69.90s</td></tr>
+<tr><td>2026-02-09 12:05:39</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 70.91 s (scheduled at 70.90 s): Poll at 70.90s</td></tr>
+<tr><td>2026-02-09 12:05:40</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 15185.5 a.u. at Lmax 545.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:40</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 6981.5 a.u. at 70.7 s</td></tr>
+<tr><td>2026-02-09 12:05:40</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:40</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 70.7 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:40</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 71.91 s (scheduled at 71.90 s): Poll at 71.90s</td></tr>
+<tr><td>2026-02-09 12:05:41</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 15269.3 a.u. at Lmax 552.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:41</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 7024.1 a.u. at 72.2 s</td></tr>
+<tr><td>2026-02-09 12:05:41</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:41</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 72.2 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:41</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 72.91 s (scheduled at 72.90 s): Poll at 72.90s</td></tr>
+<tr><td>2026-02-09 12:05:42</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 73.91 s (scheduled at 73.90 s): Poll at 73.90s</td></tr>
+<tr><td>2026-02-09 12:05:43</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 14768.9 a.u. at Lmax 555.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:43</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 6962.3 a.u. at 73.7 s</td></tr>
+<tr><td>2026-02-09 12:05:43</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:43</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 73.7 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:43</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 74.91 s (scheduled at 74.90 s): Poll at 74.90s</td></tr>
+<tr><td>2026-02-09 12:05:44</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 14710.7 a.u. at Lmax 553.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:44</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 6925.9 a.u. at 75.2 s</td></tr>
+<tr><td>2026-02-09 12:05:44</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:44</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 75.2 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:44</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 75.91 s (scheduled at 75.90 s): Poll at 75.90s</td></tr>
+<tr><td>2026-02-09 12:05:45</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 76.91 s (scheduled at 76.90 s): Poll at 76.90s</td></tr>
+<tr><td>2026-02-09 12:05:46</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 14721.0 a.u. at Lmax 547.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:46</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 6959.8 a.u. at 76.7 s</td></tr>
+<tr><td>2026-02-09 12:05:46</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:46</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 76.7 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:46</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 77.91 s (scheduled at 77.90 s): Poll at 77.90s</td></tr>
+<tr><td>2026-02-09 12:05:46</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 78.00 s (scheduled at 78.00 s): Set flow 0.25 on Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:05:46</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT C 0.250 (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:46</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 21.18 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:05:46</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:46</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 21.39 ms, response: 00I0.250MM</td></tr>
+<tr><td>2026-02-09 12:05:46</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): pumping rate set to 0.25 mL/min</td></tr>
+<tr><td>2026-02-09 12:05:47</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 78.31 s (scheduled at 78.30 s): Set flow 0.5 on Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:05:47</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT C 0.500 (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:47</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 21.08 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:05:47</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:47</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 11.04 ms, response: 00I0.500MM</td></tr>
+<tr><td>2026-02-09 12:05:47</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): pumping rate set to 0.5 mL/min</td></tr>
+<tr><td>2026-02-09 12:05:47</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 78.61 s (scheduled at 78.60 s): Set flow 1.25 on Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:05:47</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT C 1.250 (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:47</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 21.23 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:05:47</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:47</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 10.83 ms, response: 00I1.250MM</td></tr>
+<tr><td>2026-02-09 12:05:47</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): pumping rate set to 1.25 mL/min</td></tr>
+<tr><td>2026-02-09 12:05:47</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 14756.8 a.u. at Lmax 551.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:47</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 6905.0 a.u. at 78.3 s</td></tr>
+<tr><td>2026-02-09 12:05:47</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:47</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 78.3 s (+1.6 s)</td></tr>
+<tr><td>2026-02-09 12:05:47</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 78.91 s (scheduled at 78.90 s): Poll at 78.90s</td></tr>
+<tr><td>2026-02-09 12:05:48</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 79.91 s (scheduled at 79.90 s): Poll at 79.90s</td></tr>
+<tr><td>2026-02-09 12:05:49</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 12428.7 a.u. at Lmax 551.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:49</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 5882.3 a.u. at 79.8 s</td></tr>
+<tr><td>2026-02-09 12:05:49</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:49</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 79.8 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:49</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 80.91 s (scheduled at 80.90 s): Poll at 80.90s</td></tr>
+<tr><td>2026-02-09 12:05:50</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 12900.7 a.u. at Lmax 547.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:50</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 5921.3 a.u. at 81.3 s</td></tr>
+<tr><td>2026-02-09 12:05:50</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:50</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 81.3 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:50</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 81.91 s (scheduled at 81.90 s): Poll at 81.90s</td></tr>
+<tr><td>2026-02-09 12:05:51</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 82.91 s (scheduled at 82.90 s): Poll at 82.90s</td></tr>
+<tr><td>2026-02-09 12:05:52</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 12943.4 a.u. at Lmax 544.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:52</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 6012.8 a.u. at 82.8 s</td></tr>
+<tr><td>2026-02-09 12:05:52</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>1 step detected</td></tr>
+<tr><td>2026-02-09 12:05:52</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 82.8 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:52</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 83.91 s (scheduled at 83.90 s): Poll at 83.90s</td></tr>
+<tr><td>2026-02-09 12:05:53</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 12805.6 a.u. at Lmax 551.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:53</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 5914.8 a.u. at 84.3 s</td></tr>
+<tr><td>2026-02-09 12:05:53</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>2 steps detected</td></tr>
+<tr><td>2026-02-09 12:05:53</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 84.3 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:53</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 84.91 s (scheduled at 84.90 s): Poll at 84.90s</td></tr>
+<tr><td>2026-02-09 12:05:54</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 85.91 s (scheduled at 85.90 s): Poll at 85.90s</td></tr>
+<tr><td>2026-02-09 12:05:55</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 12733.7 a.u. at Lmax 546.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:55</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 5943.0 a.u. at 85.8 s</td></tr>
+<tr><td>2026-02-09 12:05:55</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>2 steps detected</td></tr>
+<tr><td>2026-02-09 12:05:55</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 85.8 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:55</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 86.91 s (scheduled at 86.90 s): Poll at 86.90s</td></tr>
+<tr><td>2026-02-09 12:05:56</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 12487.3 a.u. at Lmax 552.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:56</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 5901.7 a.u. at 87.3 s</td></tr>
+<tr><td>2026-02-09 12:05:56</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>2 steps detected</td></tr>
+<tr><td>2026-02-09 12:05:56</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 87.3 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:56</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 87.91 s (scheduled at 87.90 s): Poll at 87.90s</td></tr>
+<tr><td>2026-02-09 12:05:57</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 88.91 s (scheduled at 88.90 s): Poll at 88.90s</td></tr>
+<tr><td>2026-02-09 12:05:58</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 13020.6 a.u. at Lmax 544.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:58</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 5901.9 a.u. at 88.8 s</td></tr>
+<tr><td>2026-02-09 12:05:58</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>2 steps detected</td></tr>
+<tr><td>2026-02-09 12:05:58</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 88.8 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:58</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 89.91 s (scheduled at 89.90 s): Poll at 89.90s</td></tr>
+<tr><td>2026-02-09 12:05:58</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 90.00 s (scheduled at 90.00 s): Set flow 0.0 on Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:05:58</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT C 0.000 (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:58</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 21.3 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:05:58</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:58</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 10.46 ms, response: 00S2.000MM</td></tr>
+<tr><td>2026-02-09 12:05:58</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): pumping rate set to 0.000 mL/min</td></tr>
+<tr><td>2026-02-09 12:05:59</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 90.31 s (scheduled at 90.30 s): Set flow 0.5 on Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:05:59</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT C 0.500 (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:59</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 21.06 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:05:59</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:59</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 10.51 ms, response: 00I0.500MM</td></tr>
+<tr><td>2026-02-09 12:05:59</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): pumping rate set to 0.5 mL/min</td></tr>
+<tr><td>2026-02-09 12:05:59</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 90.61 s (scheduled at 90.60 s): Set flow 1.5 on Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:05:59</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT C 1.500 (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:59</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 21.46 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:05:59</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:05:59</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 11.23 ms, response: 00I1.500MM</td></tr>
+<tr><td>2026-02-09 12:05:59</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): pumping rate set to 1.5 mL/min</td></tr>
+<tr><td>2026-02-09 12:05:59</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 12488.1 a.u. at Lmax 544.0 nm</td></tr>
+<tr><td>2026-02-09 12:05:59</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 5931.2 a.u. at 90.3 s</td></tr>
+<tr><td>2026-02-09 12:05:59</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>2 steps detected</td></tr>
+<tr><td>2026-02-09 12:05:59</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 90.3 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:05:59</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 90.91 s (scheduled at 90.90 s): Poll at 90.90s</td></tr>
+<tr><td>2026-02-09 12:06:00</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 91.91 s (scheduled at 91.90 s): Poll at 91.90s</td></tr>
+<tr><td>2026-02-09 12:06:01</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 11097.8 a.u. at Lmax 542.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:01</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 5190.2 a.u. at 91.8 s</td></tr>
+<tr><td>2026-02-09 12:06:01</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>2 steps detected</td></tr>
+<tr><td>2026-02-09 12:06:01</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 91.8 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:01</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 92.91 s (scheduled at 92.90 s): Poll at 92.90s</td></tr>
+<tr><td>2026-02-09 12:06:02</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 11125.9 a.u. at Lmax 552.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:02</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 5216.9 a.u. at 93.3 s</td></tr>
+<tr><td>2026-02-09 12:06:02</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>2 steps detected</td></tr>
+<tr><td>2026-02-09 12:06:02</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 93.3 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:02</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 93.91 s (scheduled at 93.90 s): Poll at 93.90s</td></tr>
+<tr><td>2026-02-09 12:06:03</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 94.91 s (scheduled at 94.90 s): Poll at 94.90s</td></tr>
+<tr><td>2026-02-09 12:06:04</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 11191.6 a.u. at Lmax 544.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:04</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 5191.5 a.u. at 94.8 s</td></tr>
+<tr><td>2026-02-09 12:06:04</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>2 steps detected</td></tr>
+<tr><td>2026-02-09 12:06:04</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 94.8 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:04</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 95.91 s (scheduled at 95.90 s): Poll at 95.90s</td></tr>
+<tr><td>2026-02-09 12:06:05</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 11250.7 a.u. at Lmax 544.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:05</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 5166.0 a.u. at 96.3 s</td></tr>
+<tr><td>2026-02-09 12:06:05</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>2 steps detected</td></tr>
+<tr><td>2026-02-09 12:06:05</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 96.3 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:05</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 96.91 s (scheduled at 96.90 s): Poll at 96.90s</td></tr>
+<tr><td>2026-02-09 12:06:06</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 97.91 s (scheduled at 97.90 s): Poll at 97.90s</td></tr>
+<tr><td>2026-02-09 12:06:07</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 11277.2 a.u. at Lmax 547.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:07</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 5147.0 a.u. at 97.8 s</td></tr>
+<tr><td>2026-02-09 12:06:07</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>2 steps detected</td></tr>
+<tr><td>2026-02-09 12:06:07</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 97.8 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:07</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 98.91 s (scheduled at 98.90 s): Poll at 98.90s</td></tr>
+<tr><td>2026-02-09 12:06:08</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 11446.6 a.u. at Lmax 548.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:08</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 5152.1 a.u. at 99.3 s</td></tr>
+<tr><td>2026-02-09 12:06:08</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>2 steps detected</td></tr>
+<tr><td>2026-02-09 12:06:08</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 99.3 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:08</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 99.91 s (scheduled at 99.90 s): Poll at 99.90s</td></tr>
+<tr><td>2026-02-09 12:06:09</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 100.91 s (scheduled at 100.90 s): Poll at 100.90s</td></tr>
+<tr><td>2026-02-09 12:06:10</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 11048.6 a.u. at Lmax 546.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:10</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 5144.8 a.u. at 100.8 s</td></tr>
+<tr><td>2026-02-09 12:06:10</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>2 steps detected</td></tr>
+<tr><td>2026-02-09 12:06:10</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 100.8 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:10</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 101.91 s (scheduled at 101.90 s): Poll at 101.90s</td></tr>
+<tr><td>2026-02-09 12:06:10</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 102.00 s (scheduled at 102.00 s): Set flow 2.0 on Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:06:10</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT 2.000MM (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:06:10</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 21.41 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:06:10</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:06:10</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 11.65 ms, response: 00S2.000MM</td></tr>
+<tr><td>2026-02-09 12:06:10</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): pumping rate set to 2.0 mL/min</td></tr>
+<tr><td>2026-02-09 12:06:11</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 102.31 s (scheduled at 102.30 s): Set flow 0.0 on Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:06:11</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT C 0.000 (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:06:11</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 21.09 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:06:11</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:06:11</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 10.74 ms, response: 00S0.500MM</td></tr>
+<tr><td>2026-02-09 12:06:11</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): pumping rate set to 0.000 mL/min</td></tr>
+<tr><td>2026-02-09 12:06:11</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 102.61 s (scheduled at 102.60 s): Set flow 0.0 on Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:06:11</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT C 0.000 (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:06:11</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 21.14 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:06:11</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:06:11</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 10.74 ms, response: 00S0.250MM</td></tr>
+<tr><td>2026-02-09 12:06:11</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): pumping rate set to 0.000 mL/min</td></tr>
+<tr><td>2026-02-09 12:06:11</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 11231.6 a.u. at Lmax 545.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:11</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 5216.6 a.u. at 102.3 s</td></tr>
+<tr><td>2026-02-09 12:06:11</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>2 steps detected</td></tr>
+<tr><td>2026-02-09 12:06:11</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 102.3 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:11</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 102.91 s (scheduled at 102.90 s): Poll at 102.90s</td></tr>
+<tr><td>2026-02-09 12:06:11</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 103.20 s (scheduled at 103.20 s): Run Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:06:11</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RUN (run)</td></tr>
+<tr><td>2026-02-09 12:06:12</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> run took 20.86 ms, response: 00I</td></tr>
+<tr><td>2026-02-09 12:06:12</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): pump is running (mode: INFUSE)</td></tr>
+<tr><td>2026-02-09 12:06:12</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 103.91 s (scheduled at 103.90 s): Poll at 103.90s</td></tr>
+<tr><td>2026-02-09 12:06:13</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:13</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 103.8 s</td></tr>
+<tr><td>2026-02-09 12:06:13</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>3 steps detected</td></tr>
+<tr><td>2026-02-09 12:06:13</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 103.8 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:13</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 104.91 s (scheduled at 104.90 s): Poll at 104.90s</td></tr>
+<tr><td>2026-02-09 12:06:14</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:14</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 105.3 s</td></tr>
+<tr><td>2026-02-09 12:06:14</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>3 steps detected</td></tr>
+<tr><td>2026-02-09 12:06:14</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 105.3 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:14</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 105.91 s (scheduled at 105.90 s): Poll at 105.90s</td></tr>
+<tr><td>2026-02-09 12:06:15</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 106.91 s (scheduled at 106.90 s): Poll at 106.90s</td></tr>
+<tr><td>2026-02-09 12:06:16</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:16</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 106.8 s</td></tr>
+<tr><td>2026-02-09 12:06:16</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>3 steps detected</td></tr>
+<tr><td>2026-02-09 12:06:16</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 106.8 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:16</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 107.91 s (scheduled at 107.90 s): Poll at 107.90s</td></tr>
+<tr><td>2026-02-09 12:06:17</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>Emission RMS tolerance set to 1000 a.u.</td></tr>
+<tr><td>2026-02-09 12:06:17</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>Sliding window size set to 10 samples</td></tr>
+<tr><td>2026-02-09 12:06:17</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>Max # of outliers set to 3 samples</td></tr>
+<tr><td>2026-02-09 12:06:17</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>Min step duration set to 5 samples</td></tr>
+<tr><td>2026-02-09 12:06:17</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:17</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 108.4 s</td></tr>
+<tr><td>2026-02-09 12:06:17</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>3 steps detected</td></tr>
+<tr><td>2026-02-09 12:06:17</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 108.4 s (+1.6 s)</td></tr>
+<tr><td>2026-02-09 12:06:17</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 108.91 s (scheduled at 108.90 s): Poll at 108.90s</td></tr>
+<tr><td>2026-02-09 12:06:18</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 109.91 s (scheduled at 109.90 s): Poll at 109.90s</td></tr>
+<tr><td>2026-02-09 12:06:19</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:19</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 109.9 s</td></tr>
+<tr><td>2026-02-09 12:06:19</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>3 steps detected</td></tr>
+<tr><td>2026-02-09 12:06:19</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 109.9 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:19</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 110.91 s (scheduled at 110.90 s): Poll at 110.90s</td></tr>
+<tr><td>2026-02-09 12:06:20</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 111.91 s (scheduled at 111.90 s): Poll at 111.90s</td></tr>
+<tr><td>2026-02-09 12:06:20</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:20</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 111.4 s</td></tr>
+<tr><td>2026-02-09 12:06:20</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>3 steps detected</td></tr>
+<tr><td>2026-02-09 12:06:20</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 111.4 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:21</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 112.91 s (scheduled at 112.90 s): Poll at 112.90s</td></tr>
+<tr><td>2026-02-09 12:06:21</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>Emission RMS tolerance set to 300 a.u.</td></tr>
+<tr><td>2026-02-09 12:06:21</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>Sliding window size set to 10 samples</td></tr>
+<tr><td>2026-02-09 12:06:21</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>Max # of outliers set to 3 samples</td></tr>
+<tr><td>2026-02-09 12:06:21</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>Min step duration set to 5 samples</td></tr>
+<tr><td>2026-02-09 12:06:22</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:22</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 112.9 s</td></tr>
+<tr><td>2026-02-09 12:06:22</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>2 steps detected</td></tr>
+<tr><td>2026-02-09 12:06:22</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 112.9 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:22</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 113.91 s (scheduled at 113.90 s): Poll at 113.90s</td></tr>
+<tr><td>2026-02-09 12:06:22</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 114.00 s (scheduled at 114.00 s): Set flow 0.0 on Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:06:22</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT C 0.000 (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:06:22</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 21.44 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:06:22</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:06:22</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> set_pumping_rate took 10.26 ms, response: 00S2.000MM</td></tr>
+<tr><td>2026-02-09 12:06:22</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): pumping rate set to 0.000 mL/min</td></tr>
+<tr><td>2026-02-09 12:06:23</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 114.31 s (scheduled at 114.30 s): Set flow 0.0 on Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:06:23</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT 0.000MM (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:06:23</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 21.76 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:06:23</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:06:23</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> set_pumping_rate took 11.02 ms, response: 00S0.000MM</td></tr>
+<tr><td>2026-02-09 12:06:23</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): pumping rate set to 0.000 mL/min</td></tr>
+<tr><td>2026-02-09 12:06:23</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 114.61 s (scheduled at 114.60 s): Set flow 0.0 on Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:06:23</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT 0.000MM (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:06:23</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 20.84 ms, response: 00S</td></tr>
+<tr><td>2026-02-09 12:06:23</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< RAT (set_pumping_rate)</td></tr>
+<tr><td>2026-02-09 12:06:23</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> set_pumping_rate took 10.28 ms, response: 00S0.000MM</td></tr>
+<tr><td>2026-02-09 12:06:23</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): pumping rate set to 0.000 mL/min</td></tr>
+<tr><td>2026-02-09 12:06:23</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 114.91 s (scheduled at 114.90 s): Poll at 114.90s</td></tr>
+<tr><td>2026-02-09 12:06:23</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 0.0 a.u. at Lmax 900.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:23</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 0.0 a.u. at 114.4 s</td></tr>
+<tr><td>2026-02-09 12:06:23</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>2 steps detected</td></tr>
+<tr><td>2026-02-09 12:06:23</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 114.4 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:24</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 115.91 s (scheduled at 115.90 s): Poll at 115.90s</td></tr>
+<tr><td>2026-02-09 12:06:24</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 116.00 s (scheduled at 116.00 s): Final stop Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:06:24</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< STP (stop)</td></tr>
+<tr><td>2026-02-09 12:06:24</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> stop took 10.61 ms, response: 00S?NA</td></tr>
+<tr><td>2026-02-09 12:06:24</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): pump is stopped</td></tr>
+<tr><td>2026-02-09 12:06:24</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 116.00 s (scheduled at 116.00 s): Final stop Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:06:24</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< STP (stop)</td></tr>
+<tr><td>2026-02-09 12:06:24</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 116.02 s (scheduled at 116.00 s): Final stop Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:06:24</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> stop took 10.55 ms, response: 00S?NA</td></tr>
+<tr><td>2026-02-09 12:06:24</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): pump is stopped</td></tr>
+<tr><td>2026-02-09 12:06:24</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< STP (stop)</td></tr>
+<tr><td>2026-02-09 12:06:24</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> stop took 10.63 ms, response: 00S?NA</td></tr>
+<tr><td>2026-02-09 12:06:24</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): pump is stopped</td></tr>
+<tr><td>2026-02-09 12:06:24</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 116.11 s (scheduled at 116.10 s): Poll after stop Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:06:24</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 116.11 s (scheduled at 116.10 s): Poll after stop Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:06:24</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 116.12 s (scheduled at 116.10 s): Poll after stop Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 116.31 s (scheduled at 116.30 s): Second stop Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'><<< STP (stop)</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 116.33 s (scheduled at 116.30 s): Second stop Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>>>> stop took 10.91 ms, response: 00S?NA</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'><<< STP (stop)</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #ffff00'>UART3</td><td style='color: #ffff00'>Pump1 (Solvent): pump is stopped</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>>>> stop took 10.81 ms, response: 00S?NA</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 116.33 s (scheduled at 116.30 s): Second stop Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'><<< STP (stop)</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #90ee90'>UART4</td><td style='color: #90ee90'>Pump2 (Catalyst): pump is stopped</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>>>> stop took 10.3 ms, response: 00S?NA</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #add8e6'>UART5</td><td style='color: #add8e6'>Pump3 (Quencher): pump is stopped</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #cccccc'>files</td><td style='color: #cccccc'>Saved and closed a 2D spectrum file 'C:\Users\abutkev\PycharmProjects\SV\results\2026-02-09_12-04-28_experiment_test.csv_2Dspectrum.csv'</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #cccccc'>files</td><td style='color: #cccccc'>Saved and closed fluorescence emission file 'C:\Users\abutkev\PycharmProjects\SV\results\2026-02-09_12-04-28_experiment_test.csv_emission.csv'</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>Calculating Stern-Volmer analysis results for experiment Test1</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #cccccc'>files</td><td style='color: #cccccc'>Saved the Stern-Volmer analysis data in 'C:\Users\abutkev\PycharmProjects\SV\results\2026-02-09_12-06-25_experiment_test.csv_SVdata.csv'</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #ffa500'>controller</td><td style='color: #ffa500'>Experiment sequence completed</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 116.34 s (scheduled at 116.30 s): Finalize sequence state</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 116.41 s (scheduled at 116.40 s): Poll after second stop Pump1 (Solvent)</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 116.41 s (scheduled at 116.40 s): Poll after second stop Pump2 (Catalyst)</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 9387.1 a.u. at Lmax 553.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 4274.7 a.u. at 115.9 s</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 115.9 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 116.42 s (scheduled at 116.40 s): Poll after second stop Pump3 (Quencher)</td></tr>
+<tr><td>2026-02-09 12:06:25</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Pump scheduler finished all actions of 'Experiment Test1' sequence</td></tr>
+<tr><td>2026-02-09 12:06:26</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 43380.7 a.u. at Lmax 558.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:26</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20677.7 a.u. at 117.4 s</td></tr>
+<tr><td>2026-02-09 12:06:26</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 117.4 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:27</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>Emission RMS tolerance set to 300 a.u.</td></tr>
+<tr><td>2026-02-09 12:06:27</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>Sliding window size set to 5 samples</td></tr>
+<tr><td>2026-02-09 12:06:27</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>Max # of outliers set to 3 samples</td></tr>
+<tr><td>2026-02-09 12:06:27</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>Min step duration set to 5 samples</td></tr>
+<tr><td>2026-02-09 12:06:27</td><td style='color: #cccccc'>gui</td><td style='color: #cccccc'>Calculating Stern-Volmer analysis results for experiment Test1</td></tr>
+<tr><td>2026-02-09 12:06:27</td><td style='color: #cccccc'>files</td><td style='color: #cccccc'>Saved the Stern-Volmer analysis data in 'C:\Users\abutkev\PycharmProjects\SV\results\2026-02-09_12-06-27_experiment_test.csv_SVdata.csv'</td></tr>
+<tr><td>2026-02-09 12:06:28</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44336.6 a.u. at Lmax 543.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:28</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20797.6 a.u. at 118.9 s</td></tr>
+<tr><td>2026-02-09 12:06:28</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 118.9 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:29</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44687.9 a.u. at Lmax 555.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:29</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20831.8 a.u. at 120.4 s</td></tr>
+<tr><td>2026-02-09 12:06:29</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 120.4 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:31</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44792.5 a.u. at Lmax 550.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:31</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20941.6 a.u. at 121.9 s</td></tr>
+<tr><td>2026-02-09 12:06:31</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 121.9 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:32</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 45094.7 a.u. at Lmax 545.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:32</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20834.0 a.u. at 123.4 s</td></tr>
+<tr><td>2026-02-09 12:06:32</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 123.4 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:34</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44122.6 a.u. at Lmax 555.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:34</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20725.1 a.u. at 124.9 s</td></tr>
+<tr><td>2026-02-09 12:06:34</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 124.9 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:34</td><td style='color: #ee00ee'>analysis</td><td style='color: #ee00ee'>Plotting the sample analysis output for experiment Test1</td></tr>
+<tr><td>2026-02-09 12:06:35</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 45347.8 a.u. at Lmax 548.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:35</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20753.3 a.u. at 126.4 s</td></tr>
+<tr><td>2026-02-09 12:06:35</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 126.4 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:37</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 45750.6 a.u. at Lmax 552.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:37</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20876.5 a.u. at 127.9 s</td></tr>
+<tr><td>2026-02-09 12:06:37</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 127.9 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:38</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 45057.5 a.u. at Lmax 550.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:38</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20822.9 a.u. at 129.4 s</td></tr>
+<tr><td>2026-02-09 12:06:38</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 129.4 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:40</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 44802.4 a.u. at Lmax 552.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:40</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20475.2 a.u. at 130.9 s</td></tr>
+<tr><td>2026-02-09 12:06:40</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 130.9 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:41</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 45016.8 a.u. at Lmax 551.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:41</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20800.1 a.u. at 132.4 s</td></tr>
+<tr><td>2026-02-09 12:06:41</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 132.4 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:43</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 45918.2 a.u. at Lmax 548.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:43</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20567.8 a.u. at 133.9 s</td></tr>
+<tr><td>2026-02-09 12:06:43</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 133.9 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:44</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New spectrum: max intensity 45467.7 a.u. at Lmax 544.0 nm</td></tr>
+<tr><td>2026-02-09 12:06:44</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>New emission data point: 20877.2 a.u. at 135.4 s</td></tr>
+<tr><td>2026-02-09 12:06:44</td><td style='color: #dda0dd'>spectrometer</td><td style='color: #dda0dd'>spectrum recorded at 135.4 s (+1.5 s)</td></tr>
+<tr><td>2026-02-09 12:06:45</td><td style='color: #cccccc'>gui</td><td style='color: #cccccc'>->| Closing the main application</td></tr>
+<tr><td>2026-02-09 12:06:45</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Pump scheduler starting 'Closing pump controller' sequence</td></tr>
+<tr><td>2026-02-09 12:06:45</td><td style='color: #ffa500'>scheduler</td><td style='color: #ffa500'>Executed at 0.00 s (scheduled at 0.00 s): Stop Pump1 (Solvent)</td></tr>
+</tbody></table></div></body></html>
