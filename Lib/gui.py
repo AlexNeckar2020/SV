@@ -249,7 +249,7 @@ class SVPlotWindow(tk.Toplevel):
         self._create_plot(files.experimentSVdataResult, plot_title)
 
     def _create_plot(self, sv_data: List[SternVolmerData], title: str):
-        x_vals = [d.conc_quencher_M * 1000 for d in sv_data]  # mmol/L
+        x_vals = [d.conc_quencher_M * 1000 for d in sv_data]  # UPDATE! mol/L to mmol/L for displaying
         y_vals = [d.ratio_I0_I for d in sv_data]
         y_errs = [d.ser_I0_I for d in sv_data]
 

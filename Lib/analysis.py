@@ -186,7 +186,8 @@ class StepDetector:
         flow_solvent_mLmin = float(timepoint_step_params["PUMP1 flow (mL/min)"])
         flow_catalyst_mLmin = float(timepoint_step_params["PUMP2 flow (mL/min)"])
         flow_quencher_mLmin = float(timepoint_step_params["PUMP3 flow (mL/min)"])
-        tmp_var = stock_quencher_C_mM * flow_quencher_mLmin / (flow_solvent_mLmin + flow_catalyst_mLmin + flow_quencher_mLmin) # this will raise exception if all flows = 0
+        # UPDATE! * 1000 needed to convert mmol/L to mol/L
+        tmp_var = stock_quencher_C_mM * flow_quencher_mLmin / (flow_solvent_mLmin + flow_catalyst_mLmin + flow_quencher_mLmin) / 1000 # this will raise exception if all flows = 0
         print(f" ::: [Q] at {timepoint_s:.2f} s = {tmp_var}")
         return tmp_var
 

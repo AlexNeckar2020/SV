@@ -281,10 +281,11 @@ def SVresultsFileWriteSVData(SVdata: List[SternVolmerData]) -> bool:
         if len(experimentSVdataResult) > 0:
             new_line = "\n"+experimentData["Name"] + " Stern-Volmer results data:\n"
             SVresultsFile.write(new_line)  # write caption for Stern-Volmer results
-            new_line = "[Quencher] [mmol/L], I0/I [a.u.], standard error [a.u.]\n"
+            # UPDATE! save in mol/L data for Ksv extraction 
+            new_line = "[Quencher] [mol/L], I0/I [a.u.], standard error [a.u.]\n"
             SVresultsFile.write(new_line)  # write headers for Stern-Volmer results
             for SVentry in SVdata:
-                new_line = f"{SVentry.conc_quencher_M:.3f},{SVentry.ratio_I0_I:.2f},{SVentry.ser_I0_I:.6f}\n" # add Stern-Volmer data for plotting to the file
+                new_line = f"{SVentry.conc_quencher_M:.6f},{SVentry.ratio_I0_I:.2f},{SVentry.ser_I0_I:.6f}\n" # add Stern-Volmer data for plotting to the file
                 SVresultsFile.write(new_line)
         return True
     return False
